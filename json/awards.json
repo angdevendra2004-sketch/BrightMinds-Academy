@@ -1,0 +1,182 @@
+[
+  {
+    "title": "National Debate Champions",
+    "description": "Two consecutive years winning top honors — proving our students excel in logic, speech, and critical thinking under pressure.",
+    "icon": "M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4c0-1.166.414-2.23 1.086-3.086",
+    "iconColor": "text-white",
+    "bgGradient": "from-gold-400 to-amber-500",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-gold-600"
+  },
+  {
+    "title": "STEM Innovation Award",
+    "description": "Honored for groundbreaking robotics, coding projects, and science fair wins — inspiring the next generation of innovators.",
+    "icon": "M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z",
+    "iconColor": "text-white",
+    "bgGradient": "from-blue-500 to-indigo-600",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-blue-600"
+  },
+  {
+    "title": "Community Heroes",
+    "description": "Students led food drives, mentorship programs, and neighborhood clean-ups — making real impact across the city.",
+    "icon": "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z",
+    "iconColor": "text-white",
+    "bgGradient": "from-green-500 to-teal-600",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-green-600"
+  },
+  {
+    "title": "Art Excellence Award",
+    "description": "Recognized for outstanding creativity in painting, sculpture, and visual arts competitions.",
+    "icon": "M12 4v16m8-8H4",
+    "iconColor": "text-white",
+    "bgGradient": "from-pink-500 to-pink-600",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-pink-600"
+  },
+  {
+    "title": "Sports Champions Trophy",
+    "description": "Achieved multiple state-level victories in football, swimming, and athletics.",
+    "icon": "M12 20l9-8-9-8-9 8 9 8z",
+    "iconColor": "text-white",
+    "bgGradient": "from-red-500 to-red-600",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-red-600"
+  },
+  {
+    "title": "Environmental Leadership",
+    "description": "Awarded for sustainability projects and eco-friendly initiatives across the campus.",
+    "icon": "M12 3v18m9-9H3",
+    "iconColor": "text-white",
+    "bgGradient": "from-teal-400 to-teal-600",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-teal-600"
+  },
+  {
+    "title": "Music & Performing Arts Award",
+    "description": "Outstanding achievements in music, drama, and performing arts competitions.",
+    "icon": "M5 12h14",
+    "iconColor": "text-white",
+    "bgGradient": "from-purple-500 to-purple-600",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-purple-600"
+  },
+  {
+    "title": "Innovation in Technology",
+    "description": "For student-led AI, robotics, and tech startup projects that made national impact.",
+    "icon": "M9 12h6m-3-3v6",
+    "iconColor": "text-white",
+    "bgGradient": "from-indigo-500 to-indigo-600",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-indigo-600"
+  },
+  {
+    "title": "Excellence in Leadership",
+    "description": "Recognized for fostering student council leaders and mentoring programs.",
+    "icon": "M6 6h12M6 12h12M6 18h12",
+    "iconColor": "text-white",
+    "bgGradient": "from-yellow-400 to-yellow-500",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-yellow-600"
+  },
+  {
+    "title": "Global Citizenship Award",
+    "description": "For contributions to international community projects and global awareness campaigns.",
+    "icon": "M12 8v8m-4-4h8",
+    "iconColor": "text-white",
+    "bgGradient": "from-orange-400 to-orange-500",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-orange-600"
+  },
+  {
+    "title": "Mathematics Olympiad",
+    "description": "Top performers in regional and national mathematics competitions.",
+    "icon": "M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z",
+    "iconColor": "text-white",
+    "bgGradient": "from-blue-400 to-blue-500",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-blue-600"
+  },
+  {
+    "title": "Science Fair Excellence",
+    "description": "Awarded for innovative research projects and experiments at national science fairs.",
+    "icon": "M8 2h8v20H8V2z",
+    "iconColor": "text-white",
+    "bgGradient": "from-green-400 to-green-500",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-green-600"
+  },
+  {
+    "title": "Cultural Festival Honors",
+    "description": "Outstanding performances in dance, music, and drama at inter-school cultural fests.",
+    "icon": "M4 4h16v16H4V4z",
+    "iconColor": "text-white",
+    "bgGradient": "from-pink-400 to-pink-500",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-pink-600"
+  },
+  {
+    "title": "Community Service Award",
+    "description": "Recognition for student-led volunteer work, outreach, and charity initiatives.",
+    "icon": "M12 12l9-8-9 8-9-8 9 8z",
+    "iconColor": "text-white",
+    "bgGradient": "from-teal-500 to-teal-600",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-teal-600"
+  },
+  {
+    "title": "Coding & Hackathon Winner",
+    "description": "First place in multiple hackathons and coding challenges nationally.",
+    "icon": "M3 12h18M3 6h18M3 18h18",
+    "iconColor": "text-white",
+    "bgGradient": "from-purple-400 to-purple-500",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-purple-600"
+  },
+  {
+    "title": "Photography Excellence",
+    "description": "Awarded for creativity and storytelling in photography competitions.",
+    "icon": "M12 7a5 5 0 100 10 5 5 0 000-10z",
+    "iconColor": "text-white",
+    "bgGradient": "from-red-400 to-red-500",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-red-600"
+  },
+  {
+    "title": "Literary Awards",
+    "description": "Recognition in writing, poetry, and literary competitions.",
+    "icon": "M4 6h16M4 12h16M4 18h16",
+    "iconColor": "text-white",
+    "bgGradient": "from-orange-400 to-orange-500",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-orange-600"
+  },
+  {
+    "title": "Foreign Language Excellence",
+    "description": "Students excelled in multilingual competitions and international language exams.",
+    "icon": "M12 3v18m9-9H3",
+    "iconColor": "text-white",
+    "bgGradient": "from-blue-400 to-blue-500",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-blue-600"
+  },
+  {
+    "title": "Entrepreneurship Award",
+    "description": "For student-led startups and entrepreneurial initiatives gaining national attention.",
+    "icon": "M12 4v16m8-8H4",
+    "iconColor": "text-white",
+    "bgGradient": "from-yellow-400 to-yellow-500",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-yellow-600"
+  },
+  {
+    "title": "Teacher Excellence Recognition",
+    "description": "Honoring exceptional teaching methods, mentorship, and student impact.",
+    "icon": "M8 12h8M12 8v8",
+    "iconColor": "text-white",
+    "bgGradient": "from-indigo-400 to-indigo-500",
+    "textColor": "text-navy-800",
+    "hoverColor": "text-indigo-600"
+  }
+]

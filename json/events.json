@@ -1,0 +1,20 @@
+[
+  {
+    "icon_html": "<svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 text-gold-600' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z' /></svg>",
+    "title": "Open House",
+    "description": "Tour our campus, meet educators, and discover what makes BrightMinds extraordinary.",
+    "date_html": "April 15, 2024"
+  },
+  {
+    "icon_html": "<svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 text-orange-600' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 10h18M3 6h18M3 14h18M3 18h18' /></svg>",
+    "title": "Science Fair",
+    "description": "Hands-on experiments and innovative projects by students.",
+    "date_html": "September 5, 2024"
+  },
+  {
+    "icon_html": "<svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 text-red-600' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 8v4l3 3' /></svg>",
+    "title": "Drama Festival",
+    "description": "Theatrical performances highlighting student talent and creativity.",
+    "date_html": "October 12, 2024"
+  }
+]

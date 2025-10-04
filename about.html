@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - BrightMinds Academy</title>
+  <link rel="icon" href="image/logo.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gradient-to-br from-navy-50 to-gray-100 min-h-screen">
+  <!-- Top Banner -->
+  <!-- Top Banner -->
+  <div class="bg-navy-900 text-white py-3 text-center text-xs sm:text-sm font-semibold">
+    🎓 Welcome to BrightMinds Academy | Excellence in Learning & Character |
+    📞 (555) 123-4567 | 🌐 Open House: April 15th
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white shadow-md border-b-4 border-gold-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+      <!-- Logo & Name -->
+      <div class="flex items-center gap-3">
+        <img src="image/logo.png" alt="BrightMinds Academy Logo" class="w-12 h-12 sm:w-16 sm:h-16">
+        <div>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-black text-gradient">
+            BrightMinds Academy
+          </h1>
+          <p class="text-gray-600 font-medium text-sm sm:text-base">
+            Shaping Tomorrow’s Leaders Today 🌟
+          </p>
+        </div>
+      </div>
+
+      <!-- Address Info -->
+      <div class="text-center sm:text-right text-gray-700 text-xs sm:text-sm">
+        <p>📍 456 Academy Street, Springfield</p>
+        <p>🕒 Mon – Fri: 8:00 AM – 4:00 PM | Office till 5 PM</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-navy-800 sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+      <!-- Left: Logo -->
+      <a href="index.html" class="flex items-center gap-2 text-white font-bold text-lg">
+        <img src="image/logo.png" alt="logo" class="w-9 h-9 sm:w-10 sm:h-10">
+        <span class="text-lg sm:text-xl md:text-2xl font-extrabold">BMA</span>
+      </a>
+
+      <!-- Center: Links (Desktop) -->
+      <div class="hidden md:flex space-x-5 lg:space-x-8 flex-1 justify-center text-sm lg:text-base">
+        <a href="index.html" class="text-white hover:text-gold-400 font-medium transition">Home</a>
+        <a href="about.html" class="text-white hover:text-gold-400 font-medium transition">About</a>
+        <a href="academics.html" class="text-white hover:text-gold-400 font-medium transition">Academics</a>
+        <a href="teachers.html" class="text-white hover:text-gold-400 font-medium transition">Teachers</a>
+        <a href="campus.html" class="text-white hover:text-gold-400 font-medium transition">Campus</a>
+        <a href="admission.html" class="text-white hover:text-gold-400 font-medium transition">Admission</a>
+        <a href="contact.html" class="text-white hover:text-gold-400 font-medium transition">Contact</a>
+      </div>
+
+      <!-- Right: Portal Login (Desktop) -->
+      <div class="hidden md:block">
+        <a href="portal-login.html" class="px-4 py-2 font-bold rounded-full text-white bg-gradient-to-r from-blue-500 to-yellow-400 hover:from-blue-600 hover:to-yellow-500 transition">
+          Portal Login
+        </a>
+      </div>
+
+      <!-- Hamburger (Mobile) -->
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+        <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 sm:h-8 sm:w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-navy-700">
+      <div class="flex flex-col space-y-2 py-4 text-center">
+        <a href="index.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Home</a>
+        <a href="about.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">About</a>
+        <a href="academics.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Academics</a>
+        <a href="teachers.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Teachers</a>
+        <a href="campus.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Campus</a>
+        <a href="admission.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Admission</a>
+        <a href="contact.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Contact</a>
+
+        <!-- Mobile Portal Login -->
+        <a href="portal-login.html" class="mt-3 mx-6 px-4 py-2 font-bold rounded-full text-white bg-gradient-to-r from-blue-500 to-yellow-400 hover:from-blue-600 hover:to-yellow-500 transition">
+          Portal Login
+        </a>
+      </div>
+    </div>
+  </nav>
+
+<!-- About Us Hero Section -->
+<section id="about" class="parallax-bg2 relative text-white text-center flex flex-col justify-center items-center px-6 py-24 sm:py-32 min-h-[60vh] md:min-h-[70vh]">
+  
+  <!-- Overlay for readability -->
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-4xl mx-auto">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-black mb-6 leading-tight">
+      About Us
+    </h1>
+    
+    <p class="text-base sm:text-lg md:text-xl max-w-3xl mx-auto opacity-90 mb-10">
+      BrightMinds Academy is more than just a school; it's a vibrant community dedicated to nurturing the next generation of leaders.
+      Learn about our history, mission, and the values that guide us in providing a world-class education to students from across the globe.
+    </p>
+
+    <!-- Buttons Inline -->
+    <div class="flex gap-6 justify-center flex-wrap">
+      <a href="admission.html"
+        class="bg-gold-500 text-navy-900 px-8 py-3 rounded-full font-bold hover:bg-gold-400 transition transform hover:-translate-y-1">
+        Apply Now
+      </a>
+      <button onclick="openModal('tourModal')"
+        class="border-2 border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-navy-800 transition transform hover:-translate-y-1">
+        Schedule a Tour
+      </button>
+    </div>
+
+    <p class="italic mt-6 text-sm sm:text-base opacity-80">
+      ⭐ Admissions for Fall 2024 are now open – limited spots available!
+    </p>
+  </div>
+</section>
+
+
+<!-- Story & Mission -->
+<section class="relative py-24 bg-white overflow-hidden">
+  <!-- Decorative subtle background element -->
+  <div class="absolute top-0 left-0 w-72 h-72 bg-gold-100/50 rounded-full blur-3xl -translate-x-1/4 -translate-y-1/4"></div>
+  <div class="absolute bottom-0 right-0 w-80 h-80 bg-blue-100/40 rounded-full blur-3xl translate-x-1/4 translate-y-1/4"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 z-10">
+
+    <!-- === OUR STORY === -->
+    <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center mb-24">
+      <!-- Text Content -->
+      <div class="order-2 md:order-1">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-navy-900 tracking-tight mb-6">
+          Our Story <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-amber-500">🌱</span>
+        </h2>
+        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+          Founded in <strong>1995</strong>, BrightMinds began as a small community school rooted in a bold belief: education should ignite curiosity, not just fill minds.
+        </p>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          Over 25+ years, we've grown into a vibrant international academy — home to students from <strong>40+ nationalities</strong>. Yet our core remains unchanged: nurturing thinkers, doers, and compassionate leaders for a changing world.
+        </p>
+      </div>
+
+      <!-- Image -->
+      <div class="order-1 md:order-2">
+        <div class="overflow-hidden rounded-2xl shadow-xl group">
+          <img 
+            src="image/Arts & Performance.jpg" 
+            alt="Historic photo of BrightMinds campus" 
+            class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- === MISSION & VISION === -->
+    <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <!-- Image -->
+      <div>
+        <div class="overflow-hidden rounded-2xl shadow-xl group">
+          <img 
+            src="image/s4.webp" 
+            alt="Students collaborating in a bright classroom" 
+            class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+          >
+        </div>
+      </div>
+
+      <!-- Text Content -->
+      <div>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-navy-900 tracking-tight mb-6">
+          Mission & Vision <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-600">🎯</span>
+        </h2>
+        
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-2xl font-bold text-gold-600 mb-2">Our Mission</h3>
+            <p class="text-lg text-gray-700 leading-relaxed">
+              To inspire every student to develop a lifelong love of learning, grow in character, and become engaged global citizens ready to lead with courage and compassion.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-blue-600 mb-2">Our Vision</h3>
+            <p class="text-lg text-gray-700 leading-relaxed">
+              To be a world-class school recognized for innovation, inclusivity, and integrity — where every learner’s potential is unlocked through personalized, future-focused education.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ <!-- Core Values  -->
+<section class="parallax-p3 relative py-24 overflow-hidden">
+  <!-- Decorative background elements -->
+  <div class="absolute top-10 left-10 w-32 h-32 bg-gold-200/40 rounded-full blur-2xl opacity-60 animate-pulse"></div>
+  <div class="absolute bottom-10 right-10 w-40 h-40 bg-blue-200/30 rounded-full blur-3xl opacity-50 animate-pulse delay-1000"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 z-10">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-amber-500 to-orange-500">
+          Our Core Values
+        </span>
+        <span class="ml-2">🌟</span>
+      </h2>
+      <p class="mt-4 text-lg text-white max-w-2xl mx-auto">
+        These principles guide every lesson, decision, and relationship at BrightMinds.
+      </p>
+    </div>
+
+    <!-- Values Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+      
+      <!-- Value 1: Integrity -->
+      <div class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+        <div class="p-8 text-center flex flex-col items-center h-full">
+          <div class="text-5xl mb-4">🤝</div>
+          <h3 class="text-xl font-bold text-navy-800 mb-3">Integrity</h3>
+          <p class="text-gray-600 leading-relaxed text-sm flex-grow">
+            We act with honesty, fairness, and moral courage — even when no one is watching.
+          </p>
+          <div class="mt-6 w-12 h-1 bg-gradient-to-r from-gold-400 to-amber-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </div>
+      </div>
+
+      <!-- Value 2: Global Citizenship -->
+      <div class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+        <div class="p-8 text-center flex flex-col items-center h-full">
+          <div class="text-5xl mb-4">🌍</div>
+          <h3 class="text-xl font-bold text-navy-800 mb-3">Global Citizenship</h3>
+          <p class="text-gray-600 leading-relaxed text-sm flex-grow">
+            We embrace diversity, respect cultures, and take action as responsible world citizens.
+          </p>
+          <div class="mt-6 w-12 h-1 bg-gradient-to-r from-blue-500 to-sky-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </div>
+      </div>
+
+      <!-- Value 3: Excellence -->
+      <div class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+        <div class="p-8 text-center flex flex-col items-center h-full">
+          <div class="text-5xl mb-4">🎓</div>
+          <h3 class="text-xl font-bold text-navy-800 mb-3">Excellence</h3>
+          <p class="text-gray-600 leading-relaxed text-sm flex-grow">
+            We pursue mastery — not perfectionism, but growth, effort, and high standards every day.
+          </p>
+          <div class="mt-6 w-12 h-1 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </div>
+      </div>
+
+      <!-- Value 4: Innovation -->
+      <div class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+        <div class="p-8 text-center flex flex-col items-center h-full">
+          <div class="text-5xl mb-4">💡</div>
+          <h3 class="text-xl font-bold text-navy-800 mb-3">Innovation</h3>
+          <p class="text-gray-600 leading-relaxed text-sm flex-grow">
+            We encourage creative thinking, problem-solving, and bold ideas that shape the future.
+          </p>
+          <div class="mt-6 w-12 h-1 bg-gradient-to-r from-purple-500 to-violet-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </div>
+      </div>
+
+      <!-- Value 5: Compassion -->
+      <div class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+        <div class="p-8 text-center flex flex-col items-center h-full">
+          <div class="text-5xl mb-4">❤️</div>
+          <h3 class="text-xl font-bold text-navy-800 mb-3">Compassion</h3>
+          <p class="text-gray-600 leading-relaxed text-sm flex-grow">
+            Kindness, empathy, and care define how we treat one another and our planet.
+          </p>
+          <div class="mt-6 w-12 h-1 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional Footer Quote -->
+    <div class="mt-20 text-center max-w-3xl mx-auto">
+      <blockquote class="text-lg italic text-white">
+        “Values aren’t just words on a wall — they’re the way we walk, talk, and grow together.”
+      </blockquote>
+    </div>
+  </div>
+</section>
+  <!-- Journey Timeline -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+    <h3 class="text-4xl font-bold text-gradient">Our Journey</h3>
+    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+      A legacy of growth, innovation, and commitment to excellence. Here are some key moments that shaped BrightMinds Academy.
+    </p>
+  </div>
+
+  <div class="relative max-w-5xl mx-auto">
+    <!-- Vertical Line -->
+    <div class="absolute left-1/2 transform -translate-x-1/2 bg-gray-300 w-1 h-full"></div>
+
+    <div class="space-y-20 relative">
+
+      <!-- Item 1 -->
+      <div class="flex flex-col md:flex-row items-center relative">
+        <div class="w-full md:w-1/2 pr-8 md:text-right z-10">
+          <div class="bg-white shadow-lg rounded-lg p-6 transition transform hover:-translate-y-2 hover:scale-105 hover:shadow-xl">
+            <h4 class="text-xl font-bold text-navy-900">🎓 Founding</h4>
+            <p class="text-gray-600 text-sm mt-2">
+              In 1995, Greenwood opened its doors with just 100 students, building a foundation of knowledge and community.
+            </p>
+          </div>
+        </div>
+        <!-- Circle always on top -->
+        <div class="bg-navy-900 text-white font-bold rounded-full w-20 h-20 flex items-center justify-center shadow-lg absolute left-1/2 transform -translate-x-1/2 z-20">
+          1995
+        </div>
+        <div class="w-full md:w-1/2"></div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="flex flex-col md:flex-row items-center relative">
+        <div class="w-full md:w-1/2"></div>
+        <!-- Circle -->
+        <div class="bg-gold-500 text-navy-900 font-extrabold rounded-full w-20 h-20 flex items-center justify-center shadow-lg absolute left-1/2 transform -translate-x-1/2 z-20">
+          2005
+        </div>
+        <!-- Card behind circle -->
+        <div class="w-full md:w-1/2 pl-8 z-10">
+          <div class="bg-white shadow-lg rounded-lg p-6 transition transform hover:-translate-y-2 hover:scale-105 hover:shadow-xl">
+            <h4 class="text-xl font-bold text-navy-900">🔬 Expansion</h4>
+            <p class="text-gray-600 text-sm mt-2">
+              New science and performing arts facilities brought innovation and vibrancy, attracting a larger student body.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="flex flex-col md:flex-row items-center relative">
+        <div class="w-full md:w-1/2 pr-8 md:text-right z-10">
+          <div class="bg-white shadow-lg rounded-lg p-6 transition transform hover:-translate-y-2 hover:scale-105 hover:shadow-xl">
+            <h4 class="text-xl font-bold text-navy-900">🌍 Global Recognition</h4>
+            <p class="text-gray-600 text-sm mt-2">
+              In 2015, Greenwood achieved IB accreditation, opening global opportunities for students.
+            </p>
+          </div>
+        </div>
+        <!-- Circle -->
+        <div class="bg-navy-900 text-white font-bold rounded-full w-20 h-20 flex items-center justify-center shadow-lg absolute left-1/2 transform -translate-x-1/2 z-20">
+          2015
+        </div>
+        <div class="w-full md:w-1/2"></div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="flex flex-col md:flex-row items-center relative">
+        <div class="w-full md:w-1/2"></div>
+        <!-- Circle -->
+        <div class="bg-gold-500 text-navy-900 font-extrabold rounded-full w-20 h-20 flex items-center justify-center shadow-lg absolute left-1/2 transform -translate-x-1/2 z-20">
+          2024
+        </div>
+        <!-- Card behind circle -->
+        <div class="w-full md:w-1/2 pl-8 z-10">
+          <div class="bg-white shadow-lg rounded-lg p-6 transition transform hover:-translate-y-2 hover:scale-105 hover:shadow-xl">
+            <h4 class="text-xl font-bold text-navy-900">🏆 Today</h4>
+            <p class="text-gray-600 text-sm mt-2">
+              Over 1,000 students from 40+ nationalities thrive here, supported by global partnerships and a strong alumni network.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Leadership -->
+<section class="py-24 bg-navy-50">
+  <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+    <h3 class="text-4xl font-bold text-gradient">Leadership Team</h3>
+    <p class="text-gray-600 text-lg">Meet the inspiring educators guiding our mission forward.</p>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto px-6">
+    <!-- Card 1 -->
+    <div class="bg-white rounded-xl shadow-md p-8 text-center transition transform hover:-translate-y-3 hover:shadow-xl">
+      <div class="relative w-32 h-32 mx-auto mb-6">
+        <img src="image/principal.jfif" alt="Principal" 
+             class="w-32 h-32 rounded-full object-cover border-4 border-gold-500 shadow-lg">
+      </div>
+      <h4 class="text-xl font-bold text-navy-900">Dr. Rayma Mishra</h4>
+      <span class="inline-block mt-2 px-4 py-1 bg-gold-100 text-navy-900 text-xs font-semibold rounded-full">Principal</span>
+      <p class="text-gray-600 text-sm mt-4 leading-relaxed">Championing holistic education with a vision of nurturing tomorrow’s leaders today.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-xl shadow-md p-8 text-center transition transform hover:-translate-y-3 hover:shadow-xl">
+      <div class="relative w-32 h-32 mx-auto mb-6">
+        <img src="image/vice-principal.jfif" alt="Vice Principal" 
+             class="w-32 h-32 rounded-full object-cover border-4 border-navy-900 shadow-lg">
+      </div>
+      <h4 class="text-xl font-bold text-navy-900">Mr. Naman Rathor</h4>
+      <span class="inline-block mt-2 px-4 py-1 bg-navy-100 text-navy-900 text-xs font-semibold rounded-full">Vice Principal</span>
+      <p class="text-gray-600 text-sm mt-4 leading-relaxed">Fostering academic rigor and student success through innovation and mentorship.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white rounded-xl shadow-md p-8 text-center transition transform hover:-translate-y-3 hover:shadow-xl">
+      <div class="relative w-32 h-32 mx-auto mb-6">
+        <img src="image/hod.jfif" alt="Head of Arts" 
+             class="w-32 h-32 rounded-full object-cover border-4 border-gold-500 shadow-lg">
+      </div>
+      <h4 class="text-xl font-bold text-navy-900">Ms. Govind Singh</h4>
+      <span class="inline-block mt-2 px-4 py-1 bg-gold-100 text-navy-900 text-xs font-semibold rounded-full">Head of Department</span>
+      <p class="text-gray-600 text-sm mt-4 leading-relaxed">Cultivating creativity and expression through vibrant arts programs for all learners.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-navy-900 text-gray-300 py-16 px-6">
+        <div class="flex  mb-4">
+      <img src="image/logo.png" alt="BrightMinds Academy Logo" class="w-10 h-10 mr-2">
+      <span class="font-bold text-lg">BrightMinds Academy</span>
+    </div>
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">Contact</h3>
+        <p>📍 456 Academy Street, Springfield</p>
+        <p>📞 (555) 123-4567</p>
+        <p>✉️ contact@greenwoodschool.edu</p>
+      </div>
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li>Admissions</li>
+          <li>Parent Portal</li>
+          <li>Academic Calendar</li>
+          <li>Alumni Network</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">School Hours</h3>
+        <p>Mon–Fri: 8 AM – 4 PM</p>
+        <p>Office: 8 AM – 5 PM</p>
+      </div>
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">Stay Updated</h3>
+        <p>Subscribe to our weekly newsletter for events & achievements.</p>
+        <input type="email" placeholder="Your email" class="mt-3 px-3 py-2 rounded w-full text-black"/>
+        <button class="mt-2 bg-gold-500 px-4 py-2 rounded font-bold text-navy-900 hover:bg-gold-400">Subscribe</button>
+      </div>
+    </div>
+    <div class="text-center text-sm text-gray-400 mt-8">
+      © 2024 BrightMinds Academy. All Rights Reserved.
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script>
+    // Inject modals
+    fetch('modals.html')
+      .then(response => response.text())
+      .then(html => {
+        document.body.insertAdjacentHTML('beforeend', html);
+      })
+      .catch(error => console.error('Error loading modals:', error));
+  </script>
+</body>
+</html>

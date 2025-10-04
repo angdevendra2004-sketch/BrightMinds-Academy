@@ -1,0 +1,131 @@
+[
+  {
+    "title": "Personalized Learning",
+    "description": "Lessons tailored to how each student learns best — boosting confidence and mastery at every step.",
+    "icon": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+    "iconColor": "text-gold-600",
+    "bgColor": "bg-gold-100",
+    "gradient": "from-gold-400 to-amber-500"
+  },
+  {
+    "title": "Holistic Development",
+    "description": "Nurturing emotional intelligence, creativity, and character — because true success is well-rounded.",
+    "icon": "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z",
+    "iconColor": "text-teal-600",
+    "bgColor": "bg-teal-100",
+    "gradient": "from-teal-400 to-cyan-500"
+  },
+  {
+    "title": "Future Ready",
+    "description": "Equipping students with STEM, leadership, and global skills to lead in a rapidly evolving world.",
+    "icon": "M13 10V3L4 14h7v7l9-11h-7z",
+    "iconColor": "text-indigo-600",
+    "bgColor": "bg-indigo-100",
+    "gradient": "from-indigo-500 to-purple-500"
+  },
+  {
+    "title": "Innovative Curriculum",
+    "description": "Project-based learning, real-world challenges, and interdisciplinary approaches spark curiosity and critical thinking.",
+    "icon": "M12 6.253v11.494m-5.747-8.991v5.747a2.25 2.25 0 002.25 2.25h5.494a2.25 2.25 0 002.25-2.25v-5.747a2.25 2.25 0 00-2.25-2.25H8.503a2.25 2.25 0 00-2.25 2.25z",
+    "iconColor": "text-pink-600",
+    "bgColor": "bg-pink-100",
+    "gradient": "from-pink-500 to-rose-500"
+  },
+  {
+    "title": "Inclusive Community",
+    "description": "A welcoming space where diversity is celebrated, voices are heard, and every student feels they belong.",
+    "icon": "M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.5-2.962a3.75 3.75 0 015.25 0m-5.25 0a3.75 3.75 0 00-5.25 0m10.5 0h.008v.008h-.008V18.72zm-10.5 0h.008v.008h-.008V18.72z",
+    "iconColor": "text-green-600",
+    "bgColor": "bg-green-100",
+    "gradient": "from-green-400 to-emerald-500"
+  },
+  {
+    "title": "Expert Educators",
+    "description": "Passionate mentors trained in modern pedagogy who inspire, guide, and empower every learner.",
+    "icon": "M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z",
+    "iconColor": "text-sky-600",
+    "bgColor": "bg-sky-100",
+    "gradient": "from-sky-500 to-blue-600"
+  },
+
+  {
+    "title": "Advanced Technology",
+    "description": "Smart classrooms, interactive boards, and AI-assisted learning tools to enhance understanding.",
+    "icon": "M9 12h6m-3-3v6",
+    "iconColor": "text-purple-600",
+    "bgColor": "bg-purple-100",
+    "gradient": "from-purple-400 to-purple-600"
+  },
+
+  {
+    "title": "Global Exposure",
+    "description": "Exchange programs and international collaborations prepare students for a connected world.",
+    "icon": "M12 4v16m8-8H4",
+    "iconColor": "text-red-600",
+    "bgColor": "bg-red-100",
+    "gradient": "from-red-400 to-red-600"
+  },
+
+  {
+    "title": "Creative Arts",
+    "description": "Music, drama, and visual arts studios foster imagination and self-expression.",
+    "icon": "M5 12h14",
+    "iconColor": "text-pink-600",
+    "bgColor": "bg-pink-100",
+    "gradient": "from-pink-400 to-pink-600"
+  },
+
+  {
+    "title": "Sports & Wellness",
+    "description": "Facilities for swimming, football, and yoga promote fitness and teamwork.",
+    "icon": "M12 20l9-8-9-8-9 8 9 8z",
+    "iconColor": "text-green-600",
+    "bgColor": "bg-green-100",
+    "gradient": "from-green-400 to-green-600"
+  },
+
+  {
+    "title": "Leadership Programs",
+    "description": "Clubs, student councils, and mentorship programs develop confident leaders.",
+    "icon": "M6 6h12M6 12h12M6 18h12",
+    "iconColor": "text-yellow-600",
+    "bgColor": "bg-yellow-100",
+    "gradient": "from-yellow-400 to-yellow-500"
+  },
+
+  {
+    "title": "Safe Environment",
+    "description": "24/7 security, health protocols, and counseling support a safe, nurturing school environment.",
+    "icon": "M12 2a10 10 0 00-10 10v10h20V12A10 10 0 0012 2z",
+    "iconColor": "text-blue-600",
+    "bgColor": "bg-blue-100",
+    "gradient": "from-blue-400 to-blue-600"
+  },
+
+  {
+    "title": "Environmental Awareness",
+    "description": "Green campus initiatives and sustainability programs teach responsibility toward nature.",
+    "icon": "M12 3v18m9-9H3",
+    "iconColor": "text-teal-600",
+    "bgColor": "bg-teal-100",
+    "gradient": "from-teal-400 to-teal-600"
+  },
+
+  {
+    "title": "Community Engagement",
+    "description": "Social service programs and community projects build empathy and civic responsibility.",
+    "icon": "M4 4h16v16H4V4z",
+    "iconColor": "text-orange-600",
+    "bgColor": "bg-orange-100",
+    "gradient": "from-orange-400 to-orange-500"
+  },
+
+  {
+    "title": "Global Recognition",
+    "description": "Accreditations and awards affirm the school’s excellence and reputation.",
+    "icon": "M12 8v8m-4-4h8",
+    "iconColor": "text-indigo-600",
+    "bgColor": "bg-indigo-100",
+    "gradient": "from-indigo-400 to-indigo-600"
+  }
+]

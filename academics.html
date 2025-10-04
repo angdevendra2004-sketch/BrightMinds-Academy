@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academics - BrightMinds Academy</title>
+  <link rel="icon" href="image/logo.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gradient-to-br from-navy-50 to-gray-100 min-h-screen">
+  <!-- Top Banner -->
+  <div class="bg-navy-900 text-white py-3 text-center text-xs sm:text-sm font-semibold">
+    🎓 Welcome to BrightMinds Academy | Excellence in Learning & Character |
+    📞 (555) 123-4567 | 🌐 Open House: April 15th
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white shadow-md border-b-4 border-gold-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+      <!-- Logo & Name -->
+      <div class="flex items-center gap-3">
+        <img src="image/logo.png" alt="BrightMinds Academy Logo" class="w-12 h-12 sm:w-16 sm:h-16">
+        <div>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-black text-gradient">
+            BrightMinds Academy
+          </h1>
+          <p class="text-gray-600 font-medium text-sm sm:text-base">
+            Shaping Tomorrow’s Leaders Today 🌟
+          </p>
+        </div>
+      </div>
+
+      <!-- Address Info -->
+      <div class="text-center sm:text-right text-gray-700 text-xs sm:text-sm">
+        <p>📍 456 Academy Street, Springfield</p>
+        <p>🕒 Mon – Fri: 8:00 AM – 4:00 PM | Office till 5 PM</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-navy-800 sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+      <!-- Left: Logo -->
+      <a href="index.html" class="flex items-center gap-2 text-white font-bold text-lg">
+        <img src="image/logo.png" alt="logo" class="w-9 h-9 sm:w-10 sm:h-10">
+        <span class="text-lg sm:text-xl md:text-2xl font-extrabold">BMA</span>
+      </a>
+
+      <!-- Center: Links (Desktop) -->
+      <div class="hidden md:flex space-x-5 lg:space-x-8 flex-1 justify-center text-sm lg:text-base">
+        <a href="index.html" class="text-white hover:text-gold-400 font-medium transition">Home</a>
+        <a href="about.html" class="text-white hover:text-gold-400 font-medium transition">About</a>
+        <a href="academics.html" class="text-white hover:text-gold-400 font-medium transition">Academics</a>
+        <a href="teachers.html" class="text-white hover:text-gold-400 font-medium transition">Teachers</a>
+        <a href="campus.html" class="text-white hover:text-gold-400 font-medium transition">Campus</a>
+        <a href="admission.html" class="text-white hover:text-gold-400 font-medium transition">Admission</a>
+        <a href="contact.html" class="text-white hover:text-gold-400 font-medium transition">Contact</a>
+      </div>
+
+      <!-- Right: Portal Login (Desktop) -->
+      <div class="hidden md:block">
+        <a href="portal-login.html" class="px-4 py-2 font-bold rounded-full text-white bg-gradient-to-r from-blue-500 to-yellow-400 hover:from-blue-600 hover:to-yellow-500 transition">
+          Portal Login
+        </a>
+      </div>
+
+      <!-- Hamburger (Mobile) -->
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+        <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 sm:h-8 sm:w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-navy-700">
+      <div class="flex flex-col space-y-2 py-4 text-center">
+        <a href="index.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Home</a>
+        <a href="about.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">About</a>
+        <a href="academics.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Academics</a>
+        <a href="teachers.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Teachers</a>
+        <a href="campus.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Campus</a>
+        <a href="admission.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Admission</a>
+        <a href="contact.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Contact</a>
+
+        <!-- Mobile Portal Login -->
+        <a href="portal-login.html" class="mt-3 mx-6 px-4 py-2 font-bold rounded-full text-white bg-gradient-to-r from-blue-500 to-yellow-400 hover:from-blue-600 hover:to-yellow-500 transition">
+          Portal Login
+        </a>
+      </div>
+    </div>
+  </nav>
+<!-- Academics Hero Section -->
+<section id="academics" class="parallax-b3 relative text-white text-center flex flex-col justify-center items-center px-6 py-24 sm:py-32 min-h-[60vh] md:min-h-[70vh]">
+  
+  <!-- Overlay for better readability -->
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-4xl mx-auto">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-black mb-6 leading-tight">
+      Academics
+    </h1>
+    
+    <p class="text-base sm:text-lg md:text-xl max-w-3xl mx-auto opacity-90 mb-10">
+      Our curriculum is designed to challenge and inspire students at every level. We offer a comprehensive range of subjects and programs that foster critical thinking, creativity, and a lifelong love of learning. Explore our academic offerings to see how we can help your child succeed.
+    </p>
+
+    <!-- Buttons Inline -->
+    <div class="flex gap-6 justify-center flex-wrap">
+      <a href="admission.html"
+        class="bg-gold-500 text-navy-900 px-8 py-3 rounded-full font-bold hover:bg-gold-400 transition transform hover:-translate-y-1">
+        Apply Now
+      </a>
+      <button onclick="openModal('tourModal')"
+        class="border-2 border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-navy-800 transition transform hover:-translate-y-1">
+        Schedule a Tour
+      </button>
+    </div>
+
+    <p class="italic mt-6 text-sm sm:text-base opacity-80">
+      ⭐ Admissions for Fall 2024 are now open – limited spots available!
+    </p>
+  </div>
+</section>
+
+
+ <!-- Academics - Modern & Engaging Design -->
+<section id="academics" class="relative py-24 bg-gradient-to-br from-white via-blue-50 to-indigo-50 overflow-hidden">
+  <!-- Decorative background elements -->
+  <div class="absolute top-10 left-10 w-32 h-32 bg-gold-200/30 rounded-full blur-2xl opacity-60 animate-pulse"></div>
+  <div class="absolute bottom-10 right-10 w-40 h-40 bg-navy-200/20 rounded-full blur-3xl opacity-50 animate-pulse delay-1000"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 z-10">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-navy-900 tracking-tight">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-amber-500 to-orange-500">
+          Academic Excellence
+        </span>
+        <span class="ml-2">🎓</span>
+      </h2>
+      <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+        A rigorous and balanced curriculum designed to spark curiosity, deepen understanding, and inspire a lifelong love of learning.
+      </p>
+    </div>
+
+    <!-- School Levels Grid -->
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Primary School -->
+      <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+        <div class="p-8 h-full flex flex-col">
+          <div class="flex items-center mb-4">
+            <div class="p-3 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full mr-4 shadow-md">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v11.494m-5.747-8.991v5.747a2.25 2.25 0 004.5 0v-5.747a2.25 2.25 0 00-4.5 0zM12 21a9 9 0 100-18 9 9 0 000 18z" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-navy-800">Primary School<br><span class="text-base font-normal text-gray-600">(Grades 1–5)</span></h3>
+          </div>
+          <p class="text-gray-700 mb-5 flex-grow">
+            Building strong foundations in literacy, numeracy, and values through joyful, hands-on learning.
+          </p>
+          <ul class="text-gray-600 space-y-2 text-sm">
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Core subjects: English, Math, Science
+            </li>
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Arts, music, PE & world languages (Spanish/French)
+            </li>
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Project-based & play-based exploration
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Middle School -->
+      <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+        <div class="p-8 h-full flex flex-col">
+          <div class="flex items-center mb-4">
+            <div class="p-3 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full mr-4 shadow-md">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-navy-800">Middle School<br><span class="text-base font-normal text-gray-600">(Grades 6–8)</span></h3>
+          </div>
+          <p class="text-gray-700 mb-5 flex-grow">
+            Encouraging independence, critical thinking, and passion discovery through deeper inquiry.
+          </p>
+          <ul class="text-gray-600 space-y-2 text-sm">
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Advanced Math, Science, Language Arts
+            </li>
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Electives: Coding, Robotics, Drama, Sports
+            </li>
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Leadership, service learning & global trips
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- High School -->
+      <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+        <div class="p-8 h-full flex flex-col">
+          <div class="flex items-center mb-4">
+            <div class="p-3 bg-gradient-to-br from-purple-500 to-violet-600 rounded-full mr-4 shadow-md">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-navy-800">High School<br><span class="text-base font-normal text-gray-600">(Grades 9–12)</span></h3>
+          </div>
+          <p class="text-gray-700 mb-5 flex-grow">
+            Preparing students for top universities and global careers with advanced academics and real-world readiness.
+          </p>
+          <ul class="text-gray-600 space-y-2 text-sm">
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              IB Diploma & Advanced Placement courses
+            </li>
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              College counseling & SAT/ACT prep
+            </li>
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-purple-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Research labs, internships & innovation projects
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional CTA -->
+    <div class="mt-16 text-center">
+      <a href="#curriculum" class="inline-flex items-center bg-gradient-to-r from-gold-400 to-amber-500 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-gold-300">
+        Explore Full Curriculum
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Signature -->
+
+<section id="signature-programs" class="py-24 bg-navy-900 text-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 relative">
+    <!-- Floating background shapes -->
+    <div class="absolute top-0 left-0 w-64 h-64 bg-gold-500/10 rounded-full blur-3xl -translate-x-1/4 -translate-y-1/4"></div>
+    <div class="absolute bottom-0 right-0 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl translate-x-1/4 translate-y-1/4"></div>
+
+    <!-- Header -->
+    <div class="text-center mb-16 relative z-10">
+      <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight">Signature Programs That Define Us</h2>
+      <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+        Where passion meets purpose — explore what makes BrightMinds extraordinary.
+      </p>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 gap-8 items-start relative z-10">
+      <!-- Left: Feature card -->
+      <article
+        id="feature-card"
+        class="bg-gradient-to-br from-gold-400 to-amber-500 rounded-3xl p-10 text-navy-900 shadow-2xl transition-all duration-200"
+        role="region"
+        aria-labelledby="feature-title"
+        aria-live="polite"
+      >
+        <div class="space-y-4">
+          <div id="feature-icon" class="text-6xl mb-2">🌍</div>
+          <h3 id="feature-title" class="text-3xl font-bold">IB World School</h3>
+          <p id="feature-desc" class="text-lg leading-relaxed">
+            Among the world’s top 3% of schools authorized for the full IB continuum. We empower learners to think
+            critically, act compassionately, and lead with purpose—transforming classrooms into spaces where curiosity,
+            reflection, and innovation thrive every day.
+          </p>
+          <a
+            id="feature-link"
+            href="#ib"
+            class="inline-flex items-center gap-2 font-semibold underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy-900/30 rounded-md px-1"
+          >
+            Learn About IB →
+          </a>
+        </div>
+      </article>
+
+      <!-- Right: Cards in 2x2 grid -->
+      <div id="right-stack" class="grid sm:grid-cols-2 gap-4">
+        <!-- Card 1 -->
+        <button
+          type="button"
+          class="swap-card group w-full text-left bg-white/10 backdrop-blur-md p-6 rounded-2xl ring-1 ring-inset ring-white/15 
+          hover:bg-white/15 hover:ring-white/25 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl 
+          focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 
+          focus-visible:ring-offset-navy-900"
+          aria-labelledby="card-robotics-title"
+          data-icon="🤖"
+          data-title="Robotics & AI Lab"
+          data-desc="Through hands-on robotics, AI, and coding courses, students explore real-world challenges, sharpen problem-solving skills, and spark creativity. Each project encourages teamwork, critical thinking, and innovation."
+          data-link-text="Explore Robotics →"
+          data-link-href="#robotics"
+          data-gradient-from="from-sky-400"
+          data-gradient-to="to-cyan-500"
+        >
+          <div class="text-3xl mb-2">🤖</div>
+          <h4 id="card-robotics-title" class="text-xl font-bold mb-1">Robotics & AI Lab</h4>
+          <p class="text-white/80 text-sm">
+            Through hands-on robotics, AI, and coding courses, students explore real-world challenges.
+          </p>
+        </button>
+
+        <!-- Card 2 -->
+        <button
+          type="button"
+          class="swap-card group w-full text-left bg-white/10 backdrop-blur-md p-6 rounded-2xl ring-1 ring-inset ring-white/15 
+          hover:bg-white/15 hover:ring-white/25 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl 
+          focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 
+          focus-visible:ring-offset-navy-900"
+          aria-labelledby="card-arts-title"
+          data-icon="🎭"
+          data-title="Center Stage Arts"
+          data-desc="Professional training in drama, music, and dance nurtures artistic expression, confidence, and collaboration through workshops and showcases—mastering the art of storytelling through movement and sound."
+          data-link-text="Discover Center Stage →"
+          data-link-href="#arts"
+          data-gradient-from="from-fuchsia-400"
+          data-gradient-to="to-rose-500"
+        >
+          <div class="text-3xl mb-2">🎭</div>
+          <h4 id="card-arts-title" class="text-xl font-bold mb-1">Center Stage Arts</h4>
+          <p class="text-white/80 text-sm">
+            Professional training in drama, music, and dance nurtures expression, confidence, and collaboration.
+          </p>
+        </button>
+
+        <!-- Card 3 -->
+        <button
+          type="button"
+          class="swap-card group w-full text-left bg-white/10 backdrop-blur-md p-6 rounded-2xl ring-1 ring-inset ring-white/15 
+          hover:bg-white/15 hover:ring-white/25 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl 
+          focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 
+          focus-visible:ring-offset-navy-900"
+          aria-labelledby="card-sports-title"
+          data-icon="⚽"
+          data-title="Championship Sports"
+          data-desc="Competitive athletics and fitness programs build strength, discipline, and teamwork—instilling lifelong habits of wellness, resilience, and leadership on and off the field."
+          data-link-text="See Athletics →"
+          data-link-href="#sports"
+          data-gradient-from="from-emerald-400"
+          data-gradient-to="to-teal-500"
+        >
+          <div class="text-3xl mb-2">⚽</div>
+          <h4 id="card-sports-title" class="text-xl font-bold mb-1">Championship Sports</h4>
+          <p class="text-white/80 text-sm">
+            Competitive athletics and fitness build resilience, teamwork, and leadership.
+          </p>
+        </button>
+
+        <!-- Card 4 -->
+        <button
+          type="button"
+          class="swap-card group w-full text-left bg-white/10 backdrop-blur-md p-6 rounded-2xl ring-1 ring-inset ring-white/15 
+          hover:bg-white/15 hover:ring-white/25 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl 
+          focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 
+          focus-visible:ring-offset-navy-900"
+          aria-labelledby="card-community-title"
+          data-icon="🌱"
+          data-title="Sustainability & Service"
+          data-desc="Our students engage in sustainability and service programs that cultivate responsibility, leadership, and empathy—creating meaningful impact within their communities and beyond."
+          data-link-text="Learn More →"
+          data-link-href="#service"
+          data-gradient-from="from-lime-400"
+          data-gradient-to="to-green-500"
+        >
+          <div class="text-3xl mb-2">🌱</div>
+          <h4 id="card-community-title" class="text-xl font-bold mb-1">Sustainability & Service</h4>
+          <p class="text-white/80 text-sm">
+            Students engage in sustainability and service programs fostering empathy and leadership.
+          </p>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Why Greenwood Academics -->
+<section id="why-gis" class="py-24 bg-white">
+  <!-- Header -->
+  <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+    <h3 class="text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-navy-900 via-blue-800 to-gold-600 bg-clip-text text-transparent">
+      Why Choose Greenwood Academics?
+    </h3>
+    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+      At GIS, academics extend beyond textbooks — fostering well-rounded students who excel in character, creativity, and competence.
+    </p>
+  </div>
+
+  <!-- Cards -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto px-6 items-stretch">
+    <!-- Card 1 -->
+    <article
+      class="group relative h-full rounded-2xl p-6 md:p-8 bg-navy-50/80 backdrop-blur-sm ring-1 ring-navy-100 shadow-sm transform-gpu transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:ring-navy-200"
+      data-reveal
+    >
+      <h4 class="text-lg font-bold text-navy-900 mb-2 flex items-center gap-2">
+        <span class="text-2xl leading-none">🌟</span> Personalized Learning
+      </h4>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        Small class sizes ensure each student gets attention that matches their unique learning style and pace — blending mastery of fundamentals with creative exploration.
+      </p>
+    </article>
+
+    <!-- Card 2 -->
+    <article
+      class="group relative h-full rounded-2xl p-6 md:p-8 bg-navy-50/80 backdrop-blur-sm ring-1 ring-navy-100 shadow-sm transform-gpu transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:ring-navy-200"
+      data-reveal
+    >
+      <h4 class="text-lg font-bold text-navy-900 mb-2 flex items-center gap-2">
+        <span class="text-2xl leading-none">📚</span> Expert Faculty
+      </h4>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        Experienced educators from diverse backgrounds bring international best practices into our classrooms — passionate professionals who care deeply about student success.
+      </p>
+    </article>
+
+    <!-- Card 3 -->
+    <article
+      class="group relative h-full rounded-2xl p-6 md:p-8 bg-navy-50/80 backdrop-blur-sm ring-1 ring-navy-100 shadow-sm transform-gpu transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:ring-navy-200"
+      data-reveal
+    >
+      <h4 class="text-lg font-bold text-navy-900 mb-2 flex items-center gap-2">
+        <span class="text-2xl leading-none">🌍</span> Global Perspective
+      </h4>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        With students from over 40 nationalities and an international curriculum, Greenwood provides an immersive global learning environment preparing students for today’s interconnected world.
+      </p>
+    </article>
+
+    <!-- Card 4 -->
+    <article
+      class="group relative h-full rounded-2xl p-6 md:p-8 bg-navy-50/80 backdrop-blur-sm ring-1 ring-navy-100 shadow-sm transform-gpu transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:ring-navy-200"
+      data-reveal
+    >
+      <h4 class="text-lg font-bold text-navy-900 mb-2 flex items-center gap-2">
+        <span class="text-2xl leading-none">💻</span> Technology Integration
+      </h4>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        From robotics labs to digital literacy programs, we embrace innovative technology in teaching, preparing students to thrive in a dynamic, tech-driven world.
+      </p>
+    </article>
+
+    <!-- Card 5 -->
+    <article
+      class="group relative h-full rounded-2xl p-6 md:p-8 bg-navy-50/80 backdrop-blur-sm ring-1 ring-navy-100 shadow-sm transform-gpu transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:ring-navy-200"
+      data-reveal
+    >
+      <h4 class="text-lg font-bold text-navy-900 mb-2 flex items-center gap-2">
+        <span class="text-2xl leading-none">🤝</span> Community & Values
+      </h4>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        Emphasis on integrity, empathy, and service ensures our graduates are not only smart but also compassionate — citizens who uplift their communities.
+      </p>
+    </article>
+
+    <!-- Card 6 -->
+    <article
+      class="group relative h-full rounded-2xl p-6 md:p-8 bg-navy-50/80 backdrop-blur-sm ring-1 ring-navy-100 shadow-sm transform-gpu transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:ring-navy-200"
+      data-reveal
+    >
+      <h4 class="text-lg font-bold text-navy-900 mb-2 flex items-center gap-2">
+        <span class="text-2xl leading-none">🎓</span> Alumni Success
+      </h4>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        Guided by strong academics and leadership opportunities, our alumni now contribute to top universities and industries around the globe as changemakers.
+      </p>
+    </article>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-navy-900 text-gray-300 py-16 px-6">
+        <div class="flex  mb-4">
+      <img src="image/logo.png" alt="BrightMinds Academy Logo" class="w-10 h-10 mr-2">
+      <span class="font-bold text-lg">BrightMinds Academy</span>
+    </div>
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">Contact</h3>
+        <p>📍 456 Academy Street, Springfield</p>
+        <p>📞 (555) 123-4567</p>
+        <p>✉️ contact@greenwoodschool.edu</p>
+      </div>
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li>Admissions</li>
+          <li>Parent Portal</li>
+          <li>Academic Calendar</li>
+          <li>Alumni Network</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">School Hours</h3>
+        <p>Mon–Fri: 8 AM – 4 PM</p>
+        <p>Office: 8 AM – 5 PM</p>
+      </div>
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">Stay Updated</h3>
+        <p>Subscribe to our weekly newsletter for events & achievements.</p>
+        <input type="email" placeholder="Your email" class="mt-3 px-3 py-2 rounded w-full text-black"/>
+        <button class="mt-2 bg-gold-500 px-4 py-2 rounded font-bold text-navy-900 hover:bg-gold-400">Subscribe</button>
+      </div>
+    </div>
+    <div class="text-center text-sm text-gray-400 mt-8">
+      © 2024 BrightMinds Academy. All Rights Reserved.
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script>
+    // Inject modals
+    fetch('modals.html')
+      .then(response => response.text())
+      .then(html => {
+        document.body.insertAdjacentHTML('beforeend', html);
+      })
+      .catch(error => console.error('Error loading modals:', error));
+  </script>
+</body>
+</html>

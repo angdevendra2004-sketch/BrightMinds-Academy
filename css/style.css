@@ -1,0 +1,61 @@
+.text-gradient {
+  background: linear-gradient(45deg, #1e3a8a, #fbbf24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.parallax-bg1 {
+  background-image: url("../image/banner/bg1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-bg2 {
+  background-image: url("../image/banner/bg2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-core-values {
+  background-image: url("../image/banner/p1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-events {
+  background-image: url("../image/banner/p2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-b3 {
+  background-image: url("../image/banner/b3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hover-zoom img {
+  transition: transform 0.5s ease;
+}
+.hover-zoom:hover img {
+  transform: scale(1.08);
+}
+.gallery-img {
+  width: 100%;
+  height: 12rem; /* Responsive height using Tailwind's h-48 (192px) */
+  object-fit: cover; /* Ensures images cover the area without distortion */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow */
+}
+.parallax-p3 {
+  background-image: url("../image/banner/p3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

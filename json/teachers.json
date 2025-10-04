@@ -1,0 +1,62 @@
+[
+  {
+    "image": "image/f.jpg",
+    "name": "Priya Sharma",
+    "position": "Head of English Department",
+    "description": "With 15 years of experience, Jane fosters a love for literature and critical thinking."
+  },
+  {
+    "image": "image/m.jpg",
+    "name": "Rahul Singh",
+    "position": "Mathematics Teacher",
+    "description": "John makes complex math concepts accessible and engaging for all students."
+  },
+  {
+    "image": "image/m.jpg",
+    "name": "Ananya Patel",
+    "position": "Science Educator",
+    "description": "Emily inspires scientific curiosity through hands-on experiments and discovery."
+  },
+  {
+    "image": "image/m.jpg",
+    "name": "Vikram Kumar",
+    "position": "History Teacher",
+    "description": "Michael brings history to life with captivating stories and interactive lessons."
+  },
+  {
+    "image": "image/m.jpg",
+    "name": "Deepa Mehta",
+    "position": "Art Teacher",
+    "description": "Sarah nurtures creativity and self-expression through various art forms."
+  },
+  {
+    "image": "image/m.jpg",
+    "name": "Sanjay Reddy",
+    "position": "Physical Education Teacher",
+    "description": "David promotes a healthy and active lifestyle through sports and fitness."
+  },
+  {
+    "image": "image/f.jpg",
+    "name": "Pooja Devi",
+    "position": "Spanish Teacher",
+    "description": "Maria introduces students to the Spanish language and culture with enthusiasm."
+  },
+  {
+    "image": "image/m.jpg",
+    "name": "Arjun Nair",
+    "position": "Music Teacher",
+    "description": "Robert inspires musical talent and appreciation in students of all ages."
+  },
+  {
+    "image": "image/f.jpg",
+    "name": "Shweta Gupta",
+    "position": "Librarian",
+    "description": "Jessica cultivates a love for reading and provides resources for lifelong learning."
+  },
+  {
+    "image": "image/f.jpg",
+    "name": "Rohan Joshi",
+    "position": "Computer Science Teacher",
+    "description": "William guides students in the exciting world of coding and technology."
+  }
+]

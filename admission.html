@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admissions - BrightMinds Academy</title>
+  <link rel="icon" href="image/logo.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gradient-to-br from-navy-50 to-gray-100">
+  <!-- Top Banner -->
+  <div class="bg-navy-900 text-white py-3 text-center text-xs sm:text-sm font-semibold">
+    🎓 Welcome to BrightMinds Academy | Excellence in Learning & Character |
+    📞 (555) 123-4567 | 🌐 Open House: April 15th
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white shadow-md border-b-4 border-gold-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+      <!-- Logo & Name -->
+      <div class="flex items-center gap-3">
+        <img src="image/logo.png" alt="BrightMinds Academy Logo" class="w-12 h-12 sm:w-16 sm:h-16">
+        <div>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-black text-gradient">
+            BrightMinds Academy
+          </h1>
+          <p class="text-gray-600 font-medium text-sm sm:text-base">
+            Shaping Tomorrow’s Leaders Today 🌟
+          </p>
+        </div>
+      </div>
+
+      <!-- Address Info -->
+      <div class="text-center sm:text-right text-gray-700 text-xs sm:text-sm">
+        <p>📍 456 Academy Street, Springfield</p>
+        <p>🕒 Mon – Fri: 8:00 AM – 4:00 PM | Office till 5 PM</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-navy-800 sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+      <!-- Left: Logo -->
+      <a href="index.html" class="flex items-center gap-2 text-white font-bold text-lg">
+        <img src="image/logo.png" alt="logo" class="w-9 h-9 sm:w-10 sm:h-10">
+        <span class="text-lg sm:text-xl md:text-2xl font-extrabold">BMA</span>
+      </a>
+
+      <!-- Center: Links (Desktop) -->
+      <div class="hidden md:flex space-x-5 lg:space-x-8 flex-1 justify-center text-sm lg:text-base">
+        <a href="index.html" class="text-white hover:text-gold-400 font-medium transition">Home</a>
+        <a href="about.html" class="text-white hover:text-gold-400 font-medium transition">About</a>
+        <a href="academics.html" class="text-white hover:text-gold-400 font-medium transition">Academics</a>
+        <a href="teachers.html" class="text-white hover:text-gold-400 font-medium transition">Teachers</a>
+        <a href="campus.html" class="text-white hover:text-gold-400 font-medium transition">Campus</a>
+        <a href="admission.html" class="text-white hover:text-gold-400 font-medium transition">Admission</a>
+        <a href="contact.html" class="text-white hover:text-gold-400 font-medium transition">Contact</a>
+      </div>
+
+      <!-- Right: Portal Login (Desktop) -->
+      <div class="hidden md:block">
+        <a href="portal-login.html" class="px-4 py-2 font-bold rounded-full text-white bg-gradient-to-r from-blue-500 to-yellow-400 hover:from-blue-600 hover:to-yellow-500 transition">
+          Portal Login
+        </a>
+      </div>
+
+      <!-- Hamburger (Mobile) -->
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+        <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 sm:h-8 sm:w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-navy-700">
+      <div class="flex flex-col space-y-2 py-4 text-center">
+        <a href="index.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Home</a>
+        <a href="about.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">About</a>
+        <a href="academics.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Academics</a>
+        <a href="teachers.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Teachers</a>
+        <a href="campus.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Campus</a>
+        <a href="admission.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Admission</a>
+        <a href="contact.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Contact</a>
+
+        <!-- Mobile Portal Login -->
+        <a href="portal-login.html" class="mt-3 mx-6 px-4 py-2 font-bold rounded-full text-white bg-gradient-to-r from-blue-500 to-yellow-400 hover:from-blue-600 hover:to-yellow-500 transition">
+          Portal Login
+        </a>
+      </div>
+    </div>
+  </nav>
+
+<!-- Admission Hero Section -->
+<section id="admission" class="parallax-b3 relative text-white text-center flex flex-col justify-center items-center px-6 py-24 sm:py-32 min-h-[60vh] md:min-h-[70vh]">
+  
+  <!-- Overlay for readability -->
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-4xl mx-auto">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-black mb-6 leading-tight">
+      Admission
+    </h1>
+    
+    <p class="text-base sm:text-lg md:text-xl max-w-3xl mx-auto opacity-90 mb-10">
+      Begin your journey at BrightMinds Academy by following our straightforward admission process. We are looking for students who are eager to learn, grow, and contribute to our vibrant community. Find all the information you need to apply and become a part of our family.
+    </p>
+
+    <!-- Buttons Inline -->
+    <div class="flex gap-6 justify-center flex-wrap">
+      <a href="admission.html"
+        class="bg-gold-500 text-navy-900 px-8 py-3 rounded-full font-bold hover:bg-gold-400 transition transform hover:-translate-y-1">
+        Apply Now
+      </a>
+      <button onclick="openModal('tourModal')"
+        class="border-2 border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-navy-800 transition transform hover:-translate-y-1">
+        Schedule a Tour
+      </button>
+    </div>
+
+    <p class="italic mt-6 text-sm sm:text-base opacity-80">
+      ⭐ Admissions for Fall 2024 are now open – limited spots available!
+    </p>
+  </div>
+</section>
+
+
+  <!-- 1. Admission Process Timeline -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center mb-12">
+      <h2 class="text-4xl font-bold text-gradient">Admission Process</h2>
+      <p class="text-gray-600 mt-3">A transparent, step-by-step journey for parents & students.</p>
+    </div>
+
+    <div class="relative max-w-4xl mx-auto">
+      <!-- Timeline line -->
+      <div class="absolute left-1/2 transform -translate-x-1/2 bg-gold-500 w-1 h-full"></div>
+
+      <div class="space-y-16">
+        <!-- Timeline Item -->
+        <div class="flex flex-col md:flex-row items-center relative">
+          <div class="w-full md:w-1/2 pr-8 md:text-right">
+            <div class="bg-white p-6 shadow rounded-lg">
+              <h4 class="font-bold text-lg text-navy-900">Step 1: Online Application</h4>
+              <p class="text-gray-600 text-sm mt-2">Fill in the application form with student & parent details.</p>
+            </div>
+          </div>
+          <div class="bg-navy-900 text-white rounded-full w-14 h-14 flex items-center justify-center font-bold absolute left-1/2 -translate-x-1/2 z-10">1</div>
+          <div class="w-full md:w-1/2"></div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center relative">
+          <div class="w-full md:w-1/2"></div>
+          <div class="bg-gold-500 text-navy-900 rounded-full w-14 h-14 flex items-center justify-center font-bold absolute left-1/2 -translate-x-1/2 z-10">2</div>
+          <div class="w-full md:w-1/2 pl-8">
+            <div class="bg-white p-6 shadow rounded-lg">
+              <h4 class="font-bold text-lg text-navy-900">Step 2: Upload Documents</h4>
+              <p class="text-gray-600 text-sm mt-2">Upload required certificates & documents.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center relative">
+          <div class="w-full md:w-1/2 pr-8 md:text-right">
+            <div class="bg-white p-6 shadow rounded-lg">
+              <h4 class="font-bold text-lg text-navy-900">Step 3: Pay Registration Fee</h4>
+              <p class="text-gray-600 text-sm mt-2">Submit form & pay registration fee online.</p>
+            </div>
+          </div>
+          <div class="bg-navy-900 text-white rounded-full w-14 h-14 flex items-center justify-center font-bold absolute left-1/2 -translate-x-1/2 z-10">3</div>
+          <div class="w-full md:w-1/2"></div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center relative">
+          <div class="w-full md:w-1/2"></div>
+          <div class="bg-gold-500 text-navy-900 rounded-full w-14 h-14 flex items-center justify-center font-bold absolute left-1/2 -translate-x-1/2 z-10">4</div>
+          <div class="w-full md:w-1/2 pl-8">
+            <div class="bg-white p-6 shadow rounded-lg">
+              <h4 class="font-bold text-lg text-navy-900">Step 4: Application Review</h4>
+              <p class="text-gray-600 text-sm mt-2">Admissions team reviews your application.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center relative">
+          <div class="w-full md:w-1/2 pr-8 md:text-right">
+            <div class="bg-white p-6 shadow rounded-lg">
+              <h4 class="font-bold text-lg text-navy-900">Step 5: Entrance Test / Interview</h4>
+              <p class="text-gray-600 text-sm mt-2">If applicable, a test or interview will be scheduled.</p>
+            </div>
+          </div>
+          <div class="bg-navy-900 text-white rounded-full w-14 h-14 flex items-center justify-center font-bold absolute left-1/2 -translate-x-1/2 z-10">5</div>
+          <div class="w-full md:w-1/2"></div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center relative">
+          <div class="w-full md:w-1/2"></div>
+          <div class="bg-gold-500 text-navy-900 rounded-full w-14 h-14 flex items-center justify-center font-bold absolute left-1/2 -translate-x-1/2 z-10">6</div>
+          <div class="w-full md:w-1/2 pl-8">
+            <div class="bg-white p-6 shadow rounded-lg">
+              <h4 class="font-bold text-lg text-navy-900">Step 6: Confirmation & Fee Payment</h4>
+              <p class="text-gray-600 text-sm mt-2">Acceptance notification & fee payment instructions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center relative">
+          <div class="w-full md:w-1/2 pr-8 md:text-right">
+            <div class="bg-white p-6 shadow rounded-lg">
+              <h4 class="font-bold text-lg text-navy-900">Step 7: Admission ID Issued</h4>
+              <p class="text-gray-600 text-sm mt-2">Receive admission number & student login details.</p>
+            </div>
+          </div>
+          <div class="bg-navy-900 text-white rounded-full w-14 h-14 flex items-center justify-center font-bold absolute left-1/2 -translate-x-1/2 z-10">7</div>
+          <div class="w-full md:w-1/2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Eligibility Criteria -->
+  <section class="py-16 bg-navy-50">
+    <div class="max-w-7xl mx-auto px-6 text-center mb-10">
+      <h2 class="text-3xl font-bold text-gradient">Eligibility Criteria</h2>
+    </div>
+    <div class="max-w-5xl mx-auto bg-white p-8 rounded-xl shadow">
+      <ul class="text-gray-700 space-y-4 text-left">
+        <li>📌 <b>Class 1:</b> Age 6+, completion of Kindergarten.</li>
+        <li>📌 <b>Classes 2–9:</b> Previous class passed with report card + Transfer Certificate.</li>
+        <li>📌 <b>Class 10:</b> Based on prior school performance & Board approval (if mid-year transfer).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3. Online Application Form -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center mb-12">
+      <h2 class="text-3xl font-bold text-gradient">Online Application Form</h2>
+    </div>
+    <div class="max-w-5xl mx-auto bg-navy-50 p-10 rounded-xl shadow space-y-6">
+      <form id="admissionForm" onsubmit="handleSubmit(event, 'admissionForm')" class="space-y-8" novalidate>
+        <fieldset>
+          <legend class="font-bold text-navy-900 mb-2">Student Details</legend>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <input type="text" name="studentName" placeholder="Full Name" class="p-3 border rounded w-full" required oninput="validateField(this)">
+              <span class="text-xs text-red-500 hidden">Full Name is required.</span>
+            </div>
+            <div>
+              <input type="date" name="studentDob" placeholder="Date of Birth" class="p-3 border rounded w-full" required oninput="validateField(this)">
+              <span class="text-xs text-red-500 hidden">Date of Birth is required.</span>
+            </div>
+            <div>
+              <select name="studentGender" class="p-3 border rounded w-full" required oninput="validateField(this)"><option value="" disabled selected>Gender</option><option>Male</option><option>Female</option></select>
+              <span class="text-xs text-red-500 hidden">Please select a gender.</span>
+            </div>
+            <div>
+              <input type="text" name="studentNationality" placeholder="Nationality" class="p-3 border rounded w-full" required oninput="validateField(this)">
+              <span class="text-xs text-red-500 hidden">Nationality is required.</span>
+            </div>
+            <div>
+              <input type="text" name="studentAadhar" placeholder="Aadhar No." class="p-3 border rounded w-full" required oninput="validateField(this)">
+              <span class="text-xs text-red-500 hidden">Aadhar No. is required.</span>
+            </div>
+            <div>
+              <input type="text" name="studentBloodGroup" placeholder="Blood Group" class="p-3 border rounded w-full" required oninput="validateField(this)">
+              <span class="text-xs text-red-500 hidden">Blood Group is required.</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="font-bold text-navy-900 mb-2">Admission Details</legend>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <select name="admissionClass" class="p-3 border rounded w-full" required oninput="validateField(this)"><option value="" disabled selected>Applying for Class</option><option>Grade 1</option><option>Grade 2</option></select>
+              <span class="text-xs text-red-500 hidden">Please select a class.</span>
+            </div>
+            <div>
+              <input type="text" name="admissionYear" placeholder="Academic Year" class="p-3 border rounded w-full" required oninput="validateField(this)">
+              <span class="text-xs text-red-500 hidden">Academic Year is required.</span>
+            </div>
+            <div>
+              <input type="text" name="previousSchool" placeholder="Previous School Name" class="p-3 border rounded w-full" required oninput="validateField(this)">
+              <span class="text-xs text-red-500 hidden">Previous School Name is required.</span>
+            </div>
+            <div>
+              <input type="text" name="previousClassMarks" placeholder="Last Class Passed & % Marks" class="p-3 border rounded w-full" required oninput="validateField(this)">
+              <span class="text-xs text-red-500 hidden">This field is required.</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="font-bold text-navy-900 mb-2">Parent / Guardian Details</legend>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <input type="text" name="fatherName" placeholder="Father’s Name" class="p-3 border rounded w-full" required oninput="validateField(this)">
+              <span class="text-xs text-red-500 hidden">Father's Name is required.</span>
+            </div>
+            <div>
+              <input type="text" name="fatherOccupation" placeholder="Occupation & Qualification" class="p-3 border rounded w-full" required oninput="validateField(this)">
+              <span class="text-xs text-red-500 hidden">This field is required.</span>
+            </div>
+            <div>
+              <input type="text" name="motherName" placeholder="Mother’s Name" class="p-3 border rounded w-full" required oninput="validateField(this)">
+              <span class="text-xs text-red-500 hidden">Mother's Name is required.</span>
+            </div>
+            <div>
+              <input type="text" name="motherOccupation" placeholder="Occupation & Qualification" class="p-3 border rounded w-full" required oninput="validateField(this)">
+              <span class="text-xs text-red-500 hidden">This field is required.</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="font-bold text-navy-900 mb-2">Contact Information</legend>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <input type="text" name="address" placeholder="Permanent Address" class="p-3 border rounded w-full" required oninput="validateField(this)">
+              <span class="text-xs text-red-500 hidden">Address is required.</span>
+            </div>
+            <div>
+              <input type="text" name="addressCity" placeholder="City, State, PIN" class="p-3 border rounded w-full" required oninput="validateField(this)">
+              <span class="text-xs text-red-500 hidden">This field is required.</span>
+            </div>
+            <div>
+              <input type="tel" name="emergencyContact" placeholder="Emergency Contact No." class="p-3 border rounded w-full" required pattern="[0-9]{10}" oninput="validateField(this)">
+              <span class="text-xs text-red-500 hidden">Please enter a valid 10-digit mobile number.</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="font-bold text-navy-900 mb-2">Declaration</legend>
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" name="declaration" required oninput="validateField(this)"> <span>I hereby declare all information is true.</span>
+            <span class="text-xs text-red-500 hidden">You must agree to the declaration.</span>
+          </label>
+        </fieldset>
+
+        <div class="flex justify-end space-x-4">
+          <button type="submit" class="bg-gold-500 px-6 py-3 rounded-md font-bold text-navy-900">Submit Application</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- 4. Prospectus -->
+  <section class="py-16 bg-navy-900 text-center text-white">
+    <h2 class="text-3xl font-bold mb-4">Download Prospectus</h2>
+    <p class="mb-6">Get the full academic and facilities guide.</p>
+    <a href="#" class="bg-gold-500 text-navy-900 px-8 py-3 rounded-full font-bold hover:bg-gold-400">📥 Download PDF</a>
+  </section>
+
+  <!-- 5. Fee Structure -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center mb-12">
+      <h2 class="text-3xl font-bold text-gradient">Fee Structure</h2>
+    </div>
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+      <div class="bg-navy-50 p-6 rounded-lg shadow">
+        <h4 class="font-bold text-navy-900 mb-2">Admission Fee</h4>
+        <p class="text-gray-700">$2000 (One-time)</p>
+      </div>
+      <div class="bg-navy-50 p-6 rounded-lg shadow">
+        <h4 class="font-bold text-navy-900 mb-2">Annual Tuition</h4>
+        <p class="text-gray-700">Grade 1–5: $10,000<br>Grade 6–8: $12,000<br>Grade 9–10:. $15,000</p>
+      </div>
+      <div class="bg-navy-50 p-6 rounded-lg shadow">
+        <h4 class="font-bold text-navy-900 mb-2">Optional Fees</h4>
+        <p class="text-gray-700">Transport: $1500 / year <br> Lab & Extra-curricular: $1000 / year</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <footer id="contact" class="bg-navy-900 text-gray-300 py-16 px-6">
+        <div class="flex  mb-4">
+      <img src="image/logo.png" alt="BrightMinds Academy Logo" class="w-10 h-10 mr-2">
+      <span class="font-bold text-lg">BrightMinds Academy</span>
+    </div>
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">Contact</h3>
+        <p>📍 456 Academy Street, Springfield</p>
+        <p>📞 (555) 123-4567</p>
+        <p>✉️ contact@greenwoodschool.edu</p>
+      </div>
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li>Admissions</li>
+          <li>Parent Portal</li>
+          <li>Academic Calendar</li>
+          <li>Alumni Network</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">School Hours</h3>
+        <p>Mon–Fri: 8 AM – 4 PM</p>
+        <p>Office: 8 AM – 5 PM</p>
+      </div>
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">Stay Updated</h3>
+        <p>Subscribe to our weekly newsletter for events & achievements.</p>
+        <input type="email" placeholder="Your email" class="mt-3 px-3 py-2 rounded w-full text-black"/>
+        <button class="mt-2 bg-gold-500 px-4 py-2 rounded font-bold text-navy-900 hover:bg-gold-400">Subscribe</button>
+      </div>
+    </div>
+    <div class="text-center text-sm text-gray-400 mt-8">
+      © 2024 BrightMinds Academy. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/admission.js"></script>
+  <script>
+    // Inject modals
+    fetch('modals.html')
+      .then(response => response.text())
+      .then(html => {
+        document.body.insertAdjacentHTML('beforeend', html);
+      })
+      .catch(error => console.error('Error loading modals:', error));
+  </script>
+</body>
+</html>

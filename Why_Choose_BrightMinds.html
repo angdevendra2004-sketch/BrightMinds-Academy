@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Choose BrightMinds - BrightMinds Academy</title>
+  <link rel="icon" href="image/logo.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gradient-to-br from-navy-50 to-gray-100 min-h-screen">
+  <!-- Top Banner -->
+  <div class="bg-navy-900 text-white py-3 text-center text-xs sm:text-sm font-semibold">
+    🎓 Welcome to BrightMinds Academy | Excellence in Learning & Character |
+    📞 (555) 123-4567 | 🌐 Open House: April 15th
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white shadow-md border-b-4 border-gold-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+      <!-- Logo & Name -->
+      <div class="flex items-center gap-3">
+        <img src="image/logo.png" alt="BrightMinds Academy Logo" class="w-12 h-12 sm:w-16 sm:h-16">
+        <div>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-black text-gradient">
+            BrightMinds Academy
+          </h1>
+          <p class="text-gray-600 font-medium text-sm sm:text-base">
+            Shaping Tomorrow’s Leaders Today 🌟
+          </p>
+        </div>
+      </div>
+
+      <!-- Address Info -->
+      <div class="text-center sm:text-right text-gray-700 text-xs sm:text-sm">
+        <p>📍 456 Academy Street, Springfield</p>
+        <p>🕒 Mon – Fri: 8:00 AM – 4:00 PM | Office till 5 PM</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-navy-800 sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+      <!-- Left: Logo -->
+      <a href="index.html" class="flex items-center gap-2 text-white font-bold text-lg">
+        <img src="image/logo.png" alt="logo" class="w-9 h-9 sm:w-10 sm:h-10">
+        <span class="text-lg sm:text-xl md:text-2xl font-extrabold">BMA</span>
+      </a>
+
+      <!-- Center: Links (Desktop) -->
+      <div class="hidden md:flex space-x-5 lg:space-x-8 flex-1 justify-center text-sm lg:text-base">
+        <a href="index.html" class="text-white hover:text-gold-400 font-medium transition">Home</a>
+        <a href="about.html" class="text-white hover:text-gold-400 font-medium transition">About</a>
+        <a href="academics.html" class="text-white hover:text-gold-400 font-medium transition">Academics</a>
+        <a href="teachers.html" class="text-white hover:text-gold-400 font-medium transition">Teachers</a>
+        <a href="campus.html" class="text-white hover:text-gold-400 font-medium transition">Campus</a>
+        <a href="admission.html" class="text-white hover:text-gold-400 font-medium transition">Admission</a>
+        <a href="contact.html" class="text-white hover:text-gold-400 font-medium transition">Contact</a>
+      </div>
+
+      <!-- Right: Portal Login (Desktop) -->
+      <div class="hidden md:block">
+        <a href="portal-login.html" class="px-4 py-2 font-bold rounded-full text-white bg-gradient-to-r from-blue-500 to-yellow-400 hover:from-blue-600 hover:to-yellow-500 transition">
+          Portal Login
+        </a>
+      </div>
+
+      <!-- Hamburger (Mobile) -->
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+        <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 sm:h-8 sm:w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-navy-700">
+      <div class="flex flex-col space-y-2 py-4 text-center">
+        <a href="index.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Home</a>
+        <a href="about.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">About</a>
+        <a href="academics.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Academics</a>
+        <a href="teachers.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Teachers</a>
+        <a href="campus.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Campus</a>
+        <a href="admission.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Admission</a>
+        <a href="contact.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Contact</a>
+
+        <!-- Mobile Portal Login -->
+        <a href="portal-login.html" class="mt-3 mx-6 px-4 py-2 font-bold rounded-full text-white bg-gradient-to-r from-blue-500 to-yellow-400 hover:from-blue-600 hover:to-yellow-500 transition">
+          Portal Login
+        </a>
+      </div>
+    </div>
+  </nav>
+<!-- Hero Section -->
+<section id="home" class="parallax-bg2 relative text-white text-center flex flex-col items-center justify-center px-6 py-24 sm:py-28 lg:py-32 min-h-[50vh]">
+
+  <!-- Overlay for readability -->
+  <div class="absolute inset-0 bg-black/40 z-0"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-5xl">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
+      Why Choose <span class="text-gold-400">BrightMinds</span>
+    </h1>
+
+    <p class="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto opacity-90 mb-8 px-2">
+      BrightMinds Academy nurtures curiosity, creativity, and character. From innovative classrooms to thriving extracurriculars, we empower students to excel academically, grow personally, and become future leaders who make a meaningful impact in the world.
+    </p>
+
+    <!-- Buttons responsive: stacked on small screens, inline on sm+ -->
+    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
+      <a href="admission.html"
+        class="bg-gold-500 text-navy-900 px-8 py-3 sm:py-4 rounded-full font-bold hover:bg-gold-400 transition shadow-md transform hover:-translate-y-1">
+        Apply Now
+      </a>
+      <button onclick="openModal('tourModal')"
+        class="border-2 border-white px-8 py-3 sm:py-4 rounded-full font-bold hover:bg-white hover:text-navy-800 transition shadow-md transform hover:-translate-y-1">
+        Schedule a Tour
+      </button>
+    </div>
+
+    <p class="italic mt-6 text-sm sm:text-base opacity-80">
+      ⭐ Admissions for Fall 2024 are now open – limited spots available!
+    </p>
+  </div>
+</section>
+
+
+  <!-- Why Choose Us -->
+<section class="relative py-24 bg-gradient-to-br from-white via-blue-50 to-indigo-100 overflow-hidden">
+  <!-- Decorative blurred background elements -->
+  <div class="absolute top-0 left-0 w-64 h-64 bg-gold-200/30 rounded-full blur-3xl -translate-x-1/4 -translate-y-1/4"></div>
+  <div class="absolute bottom-0 right-0 w-72 h-72 bg-navy-200/20 rounded-full blur-3xl translate-x-1/4 translate-y-1/4"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 z-10">
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-navy-900 tracking-tight">
+        Why Choose <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-amber-500">BrightMinds</span>?
+      </h2>
+      <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+        We go beyond traditional learning — building curious, confident, and compassionate leaders ready for the future.
+      </p>
+    </div>
+
+    <!-- Features Grid: Now 3 columns on large screens, wraps gracefully -->
+   <section class="relative py-24 bg-gradient-to-br from-white via-blue-50 to-indigo-100 overflow-hidden">
+  <div class="relative max-w-7xl mx-auto px-6 z-10">
+
+
+    <div id="reasons-container" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+      <!-- Features will be injected here -->
+    </div>
+  </div>
+</section>
+
+<script>
+fetch('json/reasons.json')
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById('reasons-container');
+    data.forEach(reason => {
+      const reasonHTML = `
+        <div class="group relative p-8 bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${reason.gradient} opacity-80 group-hover:opacity-100 transition-opacity"></div>
+          <div class="flex items-center justify-center w-14 h-14 ${reason.bgColor} rounded-full mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ${reason.iconColor}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="${reason.icon}" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-navy-800 mb-3">${reason.title}</h3>
+          <p class="text-gray-600 leading-relaxed">${reason.description}</p>
+        </div>
+      `;
+      container.insertAdjacentHTML('beforeend', reasonHTML);
+    });
+  })
+  .catch(err => console.error('Error loading reasons:', err));
+</script>
+
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer id="contact" class="bg-navy-900 text-gray-300 py-16 px-6">
+  <div class="max-w-7xl mx-auto">
+    <!-- Logo & Name -->
+    <div class="flex items-center mb-8">
+      <img src="image/logo.png" alt="BrightMinds Academy Logo" class="w-10 h-10 mr-3">
+      <span class="text-white font-extrabold text-2xl">BrightMinds Academy</span>
+    </div>
+
+    <!-- Footer Content -->
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-10">
+      <!-- Contact -->
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">Contact</h3>
+        <p>📍 456 Academy Street, Springfield</p>
+        <p>📞 (555) 123-4567</p>
+        <p>✉️ contact@greenwoodschool.edu</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="admission.html" class="hover:text-gold-400 transition">Admissions</a></li>
+          <li><a href="portal-login.html" class="hover:text-gold-400 transition">Parent Portal</a></li>
+          <li><a href="#" class="hover:text-gold-400 transition">Academic Calendar</a></li>
+          <li><a href="#" class="hover:text-gold-400 transition">Alumni Network</a></li>
+        </ul>
+      </div>
+
+      <!-- School Hours -->
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">School Hours</h3>
+        <p>Mon–Fri: 8 AM – 4 PM</p>
+        <p>Office: 8 AM – 5 PM</p>
+      </div>
+
+      <!-- Newsletter -->
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">Stay Updated</h3>
+        <p>Subscribe to our weekly newsletter for events & achievements.</p>
+        <form class="mt-4">
+          <input type="email" placeholder="Your email"
+            class="px-3 py-2 rounded w-full text-navy-900 focus:outline-none focus:ring-2 focus:ring-gold-400" />
+          <button type="submit"
+            class="mt-3 w-full bg-gold-500 px-4 py-2 rounded font-bold text-navy-900 hover:bg-gold-400 transition">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+      © 2024 BrightMinds Academy. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+  <!-- Tour Modal -->
+  <div id="tourModal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg p-8 max-w-md w-full">
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="text-2xl font-bold text-navy-900">Schedule a Tour</h3>
+        <button onclick="closeModal('tourModal')" class="text-gray-500 hover:text-gray-800 text-3xl">&times;</button>
+      </div>
+      <form id="tourForm" onsubmit="handleSubmit(event, 'tourModal')" novalidate>
+        <input type="hidden" name="access_key" value="bd55f953-828a-4e0e-8aff-1a8939121807">
+        <input type="hidden" name="subject" value="New Tour Request from Website">
+        <input type="hidden" name="from_name" value="Greenwood School Website">
+
+        <div class="mb-4">
+          <label for="student-id" class="block text-gray-700 mb-2">Student ID</label>
+          <input type="text" id="student-id" name="student-id" class="w-full p-2 border rounded" required
+            oninput="validateField(this)">
+          <span class="text-xs text-red-500 hidden">Student ID is required.</span>
+        </div>
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 mb-2">Name</label>
+          <input type="text" id="name" name="name" class="w-full p-2 border rounded" required
+            oninput="validateField(this)">
+          <span class="text-xs text-red-500 hidden">Name is required.</span>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 mb-2">Email</label>
+          <input type="email" id="email" name="email" class="w-full p-2 border rounded" required
+            oninput="validateField(this)">
+          <span class="text-xs text-red-500 hidden">Please enter a valid email address.</span>
+        </div>
+        <div class="mb-4">
+          <label for="date" class="block text-gray-700 mb-2">Preferred Tour Date</label>
+          <input type="date" id="date" name="date" class="w-full p-2 border rounded" required
+            oninput="validateField(this)">
+          <span class="text-xs text-red-500 hidden">Please select a date.</span>
+        </div>
+        <div class="mb-4">
+          <label for="mobile" class="block text-gray-700 mb-2">Mobile Number</label>
+          <input type="tel" id="mobile" name="mobile" class="w-full p-2 border rounded" required pattern="[0-9]{10}"
+            oninput="validateField(this)">
+          <span class="text-xs text-red-500 hidden">Please enter a valid 10-digit mobile number.</span>
+        </div>
+        <button type="submit" class="w-full bg-navy-800 text-white py-2 rounded hover:bg-navy-700">Request Tour</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Success Modal -->
+  <div id="successModal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg p-8 max-w-md w-full text-center">
+      <h3 class="text-2xl font-bold text-green-500 mb-4">Success!</h3>
+      <p class="text-gray-700 mb-6">Your form has been submitted successfully.</p>
+      <button onclick="closeModal('successModal')"
+        class="bg-navy-800 text-white py-2 px-6 rounded hover:bg-navy-700">Close</button>
+    </div>
+  </div>
+
+  <!-- Fail Modal -->
+  <div id="failModal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg p-8 max-w-md w-full text-center">
+      <h3 class="text-2xl font-bold text-red-500 mb-4">Error!</h3>
+      <p class="text-gray-700 mb-6">There was an error submitting your form. Please try again later.</p>
+      <button onclick="closeModal('failModal')"
+        class="bg-navy-800 text-white py-2 px-6 rounded hover:bg-navy-700">Close</button>
+    </div>
+  </div>
+
+ 
+  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('json/gallery.json')
+        .then(response => response.json())
+        .then(images => {
+          const container = document.getElementById('gallery-container');
+          images.forEach(image => {
+            const galleryItem = `
+              <div class="overflow-hidden rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-500">
+                <img src="${image.src}" alt="${image.alt}" class="w-full h-full object-cover">
+              </div>
+            `;
+            container.insertAdjacentHTML('beforeend', galleryItem);
+          });
+        })
+        .catch(error => console.error('Error fetching gallery images:', error));
+    });
+  </script>
+
+</body>
+</html>

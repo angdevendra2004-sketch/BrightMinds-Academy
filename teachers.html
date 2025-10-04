@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Teachers - BrightMinds Academy</title>
+  <link rel="icon" href="image/logo.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gradient-to-br from-navy-50 to-gray-100 min-h-screen">
+  <!-- Top Banner -->
+  <div class="bg-navy-900 text-white py-3 text-center text-xs sm:text-sm font-semibold">
+    🎓 Welcome to BrightMinds Academy | Excellence in Learning & Character |
+    📞 (555) 123-4567 | 🌐 Open House: April 15th
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white shadow-md border-b-4 border-gold-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+      <!-- Logo & Name -->
+      <div class="flex items-center gap-3">
+        <img src="image/logo.png" alt="BrightMinds Academy Logo" class="w-12 h-12 sm:w-16 sm:h-16">
+        <div>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-black text-gradient">
+            BrightMinds Academy
+          </h1>
+          <p class="text-gray-600 font-medium text-sm sm:text-base">
+            Shaping Tomorrow’s Leaders Today 🌟
+          </p>
+        </div>
+      </div>
+
+      <!-- Address Info -->
+      <div class="text-center sm:text-right text-gray-700 text-xs sm:text-sm">
+        <p>📍 456 Academy Street, Springfield</p>
+        <p>🕒 Mon – Fri: 8:00 AM – 4:00 PM | Office till 5 PM</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-navy-800 sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+      <!-- Left: Logo -->
+      <a href="index.html" class="flex items-center gap-2 text-white font-bold text-lg">
+        <img src="image/logo.png" alt="logo" class="w-9 h-9 sm:w-10 sm:h-10">
+        <span class="text-lg sm:text-xl md:text-2xl font-extrabold">BMA</span>
+      </a>
+
+      <!-- Center: Links (Desktop) -->
+      <div class="hidden md:flex space-x-5 lg:space-x-8 flex-1 justify-center text-sm lg:text-base">
+        <a href="index.html" class="text-white hover:text-gold-400 font-medium transition">Home</a>
+        <a href="about.html" class="text-white hover:text-gold-400 font-medium transition">About</a>
+        <a href="academics.html" class="text-white hover:text-gold-400 font-medium transition">Academics</a>
+        <a href="teachers.html" class="text-white hover:text-gold-400 font-medium transition">Teachers</a>
+        <a href="campus.html" class="text-white hover:text-gold-400 font-medium transition">Campus</a>
+        <a href="admission.html" class="text-white hover:text-gold-400 font-medium transition">Admission</a>
+        <a href="contact.html" class="text-white hover:text-gold-400 font-medium transition">Contact</a>
+      </div>
+
+      <!-- Right: Portal Login (Desktop) -->
+      <div class="hidden md:block">
+        <a href="portal-login.html" class="px-4 py-2 font-bold rounded-full text-white bg-gradient-to-r from-blue-500 to-yellow-400 hover:from-blue-600 hover:to-yellow-500 transition">
+          Portal Login
+        </a>
+      </div>
+
+      <!-- Hamburger (Mobile) -->
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+        <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 sm:h-8 sm:w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-navy-700">
+      <div class="flex flex-col space-y-2 py-4 text-center">
+        <a href="index.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Home</a>
+        <a href="about.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">About</a>
+        <a href="academics.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Academics</a>
+        <a href="teachers.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Teachers</a>
+        <a href="campus.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Campus</a>
+        <a href="admission.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Admission</a>
+        <a href="contact.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Contact</a>
+
+        <!-- Mobile Portal Login -->
+        <a href="portal-login.html" class="mt-3 mx-6 px-4 py-2 font-bold rounded-full text-white bg-gradient-to-r from-blue-500 to-yellow-400 hover:from-blue-600 hover:to-yellow-500 transition">
+          Portal Login
+        </a>
+      </div>
+    </div>
+  </nav>
+
+<!-- Teachers Hero Section (Responsive like Home) -->
+<section id="teachers" class="parallax-bg1 relative text-white text-center flex flex-col items-center justify-center px-6 py-24 sm:py-32 min-h-[60vh] md:min-h-[70vh]">
+
+  <!-- Overlay for readability -->
+  <div class="absolute inset-0 bg-black/40 z-0"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-5xl mx-auto">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-black mb-6 leading-tight">
+      Our Teachers
+    </h1>
+
+    <p class="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto opacity-90 mb-10">
+      Meet our team of dedicated and passionate educators who are committed to nurturing the potential of every student.
+      With years of experience and a passion for teaching, they create a supportive and engaging learning environment.
+    </p>
+
+    <!-- Buttons Inline / Stacked on small screens -->
+    <div class="flex gap-6 justify-center flex-wrap">
+      <a href="admission.html"
+        class="bg-gold-500 text-navy-900 px-8 py-3 rounded-full font-bold hover:bg-gold-400 transition transform hover:-translate-y-1">
+        Apply Now
+      </a>
+      <button onclick="openModal('tourModal')"
+        class="border-2 border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-navy-800 transition transform hover:-translate-y-1">
+        Schedule a Tour
+      </button>
+    </div>
+
+    <p class="italic mt-6 text-sm sm:text-base opacity-80">
+      ⭐ Admissions for Fall 2024 are now open – limited spots available!
+    </p>
+  </div>
+</section>
+
+
+
+
+ <!-- Teachers Section -->
+<section id="teachers" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-navy-900">
+        Meet Our Educators
+      </h2>
+      <p class="text-gray-600 mt-3">
+        Dedicated experts who lead with care, creativity, and rigor.
+      </p>
+    </div>
+
+    <div id="teacher-cards-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 items-stretch">
+    </div>
+  </div>
+</section>
+
+<!-- Optional: subtle scroll-reveal (respects reduced motion) -->
+<script>
+  (() => {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const cards = document.querySelectorAll('#teachers [data-reveal]');
+    if (reduce || !('IntersectionObserver' in window)) return;
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        el.classList.remove('opacity-0', 'translate-y-3');
+        el.classList.add('opacity-100', 'translate-y-0');
+        io.unobserve(el);
+      });
+    }, { threshold: 0.15 });
+
+    cards.forEach((el, i) => {
+      el.classList.add('opacity-0', 'translate-y-3', 'transition-all', 'duration-500', 'ease-out');
+      el.style.transitionDelay = `${i * 60}ms`;
+      io.observe(el);
+    });
+  })();
+</script>
+  <!-- Footer -->
+  <footer id="contact" class="bg-navy-900 text-gray-300 py-16 px-6">
+    <div class="flex  mb-4">
+      <img src="image/logo.png" alt="BrightMinds Academy Logo" class="w-10 h-10 mr-2">
+      <span class="font-bold text-lg">BrightMinds Academy</span>
+    </div>
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">Contact</h3>
+        <p>📍 456 Academy Street, Springfield</p>
+        <p>📞 (555) 123-4567</p>
+        <p>✉️ contact@greenwoodschool.edu</p>
+      </div>
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li>Admissions</li>
+          <li>Parent Portal</li>
+          <li>Academic Calendar</li>
+          <li>Alumni Network</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">School Hours</h3>
+        <p>Mon–Fri: 8 AM – 4 PM</p>
+        <p>Office: 8 AM – 5 PM</p>
+      </div>
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">Stay Updated</h3>
+        <p>Subscribe to our weekly newsletter for events & achievements.</p>
+        <input type="email" placeholder="Your email" class="mt-3 px-3 py-2 rounded w-full text-black" />
+        <button class="mt-2 bg-gold-500 px-4 py-2 rounded font-bold text-navy-900 hover:bg-gold-400">Subscribe</button>
+      </div>
+    </div>
+    <div class="text-center text-sm text-gray-400 mt-8">
+      © 2024 BrightMinds Academy. All Rights Reserved.
+    </div>
+  </footer>
+
+  
+  <script src="js/script.js"></script>
+  <script>
+    // Inject modals
+    fetch('modals.html')
+      .then(response => response.text())
+      .then(html => {
+        document.body.insertAdjacentHTML('beforeend', html);
+      })
+      .catch(error => console.error('Error loading modals:', error));
+
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('json/teachers.json')
+        .then(response => response.json())
+        .then(teachers => {
+          const container = document.getElementById('teacher-cards-container');
+          teachers.forEach(teacher => {
+            const card = `
+              <article class="group h-full bg-navy-50 p-8 rounded-2xl ring-1 ring-navy-100 shadow-sm text-center transition-all duration-300 transform-gpu hover:-translate-y-1.5 hover:shadow-xl hover:ring-navy-200 focus-within:-translate-y-1.5" data-reveal>
+                <div class="mx-auto w-28 h-28 rounded-full p-0.5 bg-gradient-to-tr from-gold-400 to-amber-500">
+                  <img src="${teacher.image}" alt="${teacher.name}" loading="lazy" decoding="async" class="w-full h-full rounded-full object-cover ring-4 ring-white" />
+                </div>
+                <h3 class="text-xl font-bold text-navy-900 mt-4">${teacher.name}</h3>
+                <p class="text-gold-500 font-medium">${teacher.position}</p>
+                <p class="text-gray-700 mt-4 text-sm leading-relaxed">
+                  ${teacher.description}
+                </p>
+              </article>
+            `;
+            container.insertAdjacentHTML('beforeend', card);
+          });
+        })
+        .catch(error => console.error('Error fetching teachers:', error));
+    });
+  </script>
+
+</body>
+
+</html>

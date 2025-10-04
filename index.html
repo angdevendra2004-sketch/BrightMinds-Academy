@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrightMinds Academy</title>
+  <link rel="icon" href="image/logo.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gradient-to-br from-navy-50 to-gray-100 min-h-screen">
+  <!-- Top Banner -->
+  <div class="bg-navy-900 text-white py-3 text-center text-xs sm:text-sm font-semibold">
+    🎓 Welcome to BrightMinds Academy | Excellence in Learning & Character |
+    📞 (555) 123-4567 | 🌐 Open House: April 15th
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white shadow-md border-b-4 border-gold-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+      <!-- Logo & Name -->
+      <div class="flex items-center gap-3">
+        <img src="image/logo.png" alt="BrightMinds Academy Logo" class="w-12 h-12 sm:w-16 sm:h-16">
+        <div>
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-black text-gradient">
+            BrightMinds Academy
+          </h1>
+          <p class="text-gray-600 font-medium text-sm sm:text-base">
+            Shaping Tomorrow’s Leaders Today 🌟
+          </p>
+        </div>
+      </div>
+
+      <!-- Address Info -->
+      <div class="text-center sm:text-right text-gray-700 text-xs sm:text-sm">
+        <p>📍 456 Academy Street, Springfield</p>
+        <p>🕒 Mon – Fri: 8:00 AM – 4:00 PM | Office till 5 PM</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-navy-800 sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+      <!-- Left: Logo -->
+      <a href="index.html" class="flex items-center gap-2 text-white font-bold text-lg">
+        <img src="image/logo.png" alt="logo" class="w-9 h-9 sm:w-10 sm:h-10">
+        <span class="text-lg sm:text-xl md:text-2xl font-extrabold">BMA</span>
+      </a>
+
+      <!-- Center: Links (Desktop) -->
+      <div class="hidden md:flex space-x-5 lg:space-x-8 flex-1 justify-center text-sm lg:text-base">
+        <a href="index.html" class="text-white hover:text-gold-400 font-medium transition">Home</a>
+        <a href="about.html" class="text-white hover:text-gold-400 font-medium transition">About</a>
+        <a href="academics.html" class="text-white hover:text-gold-400 font-medium transition">Academics</a>
+        <a href="teachers.html" class="text-white hover:text-gold-400 font-medium transition">Teachers</a>
+        <a href="campus.html" class="text-white hover:text-gold-400 font-medium transition">Campus</a>
+        <a href="admission.html" class="text-white hover:text-gold-400 font-medium transition">Admission</a>
+        <a href="contact.html" class="text-white hover:text-gold-400 font-medium transition">Contact</a>
+      </div>
+
+      <!-- Right: Portal Login (Desktop) -->
+      <div class="hidden md:block">
+        <a href="portal-login.html" class="px-4 py-2 font-bold rounded-full text-white bg-gradient-to-r from-blue-500 to-yellow-400 hover:from-blue-600 hover:to-yellow-500 transition">
+          Portal Login
+        </a>
+      </div>
+
+      <!-- Hamburger (Mobile) -->
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+        <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 sm:h-8 sm:w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-navy-700">
+      <div class="flex flex-col space-y-2 py-4 text-center">
+        <a href="index.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Home</a>
+        <a href="about.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">About</a>
+        <a href="academics.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Academics</a>
+        <a href="teachers.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Teachers</a>
+        <a href="campus.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Campus</a>
+        <a href="admission.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Admission</a>
+        <a href="contact.html" class="block px-6 py-2 text-white hover:bg-navy-600 rounded">Contact</a>
+
+        <!-- Mobile Portal Login -->
+        <a href="portal-login.html" class="mt-3 mx-6 px-4 py-2 font-bold rounded-full text-white bg-gradient-to-r from-blue-500 to-yellow-400 hover:from-blue-600 hover:to-yellow-500 transition">
+          Portal Login
+        </a>
+      </div>
+    </div>
+  </nav>
+
+<!-- Home Hero Section (Responsive like About Us) -->
+<section id="home" class="parallax-bg1 relative text-white text-center flex flex-col items-center justify-center px-6 py-24 sm:py-32 min-h-[60vh] md:min-h-[70vh]">
+
+  <!-- Overlay for readability -->
+  <div class="absolute inset-0 bg-black/40 z-0"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-5xl mx-auto">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-black mb-6 leading-tight">
+      BrightMinds Academy
+    </h1>
+
+    <p class="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto opacity-90 mb-10">
+      Welcome to <span class="text-gold-400 font-semibold">BrightMinds Academy</span>, where innovation meets excellence. 
+      Our passionate educators, future-ready curriculum, and dynamic environment nurture curiosity, creativity, and leadership. 
+      Join us in inspiring tomorrow’s changemakers.
+    </p>
+
+    <!-- Buttons Inline / Stacked on small screens -->
+    <div class="flex gap-6 justify-center flex-wrap">
+      <a href="admission.html"
+        class="bg-gold-500 text-navy-900 px-8 py-3 rounded-full font-bold hover:bg-gold-400 transition transform hover:-translate-y-1">
+        Apply Now
+      </a>
+      <button onclick="openModal('tourModal')"
+        class="border-2 border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-navy-800 transition transform hover:-translate-y-1">
+        Schedule a Tour
+      </button>
+    </div>
+
+    <p class="italic mt-6 text-sm sm:text-base opacity-80">
+      ⭐ Admissions for Fall 2024 are now open – limited spots available!
+    </p>
+  </div>
+</section>
+
+
+
+
+
+<!-- Quick Stats - Modern Design -->
+<section class="py-20 bg-gradient-to-br from-navy-50 via-white to-blue-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-navy-900">
+        Quick Facts at a Glance
+      </h2>
+      <p class="text-gray-600 mt-3 text-lg">
+        Celebrating excellence, diversity, and achievement at BrightMinds Academy.
+      </p>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
+      <!-- Stat 1 -->
+      <div
+        class="relative group p-8 rounded-2xl bg-white/90 backdrop-blur-sm border border-gray-100 hover:shadow-xl transition-all duration-300">
+        <span
+          class="absolute left-0 top-0 bottom-0 w-1 rounded-l-lg bg-gradient-to-b from-yellow-400 to-amber-500"></span>
+        <h3 class="text-5xl font-black text-navy-900 mb-2">98%</h3>
+        <p class="font-medium text-gray-700">College Acceptance</p>
+      </div>
+
+      <!-- Stat 2 -->
+      <div
+        class="relative group p-8 rounded-2xl bg-white/90 backdrop-blur-sm border border-gray-100 hover:shadow-xl transition-all duration-300">
+        <span
+          class="absolute left-0 top-0 bottom-0 w-1 rounded-l-lg bg-gradient-to-b from-teal-400 to-cyan-500"></span>
+        <h3 class="text-5xl font-black text-navy-900 mb-2">12:1</h3>
+        <p class="font-medium text-gray-700">Student–Teacher Ratio</p>
+      </div>
+
+      <!-- Stat 3 -->
+      <div
+        class="relative group p-8 rounded-2xl bg-white/90 backdrop-blur-sm border border-gray-100 hover:shadow-xl transition-all duration-300">
+        <span
+          class="absolute left-0 top-0 bottom-0 w-1 rounded-l-lg bg-gradient-to-b from-pink-400 to-rose-500"></span>
+        <h3 class="text-5xl font-black text-navy-900 mb-2">60+</h3>
+        <p class="font-medium text-gray-700">Clubs & Activities</p>
+      </div>
+
+      <!-- Stat 4 -->
+      <div
+        class="relative group p-8 rounded-2xl bg-white/90 backdrop-blur-sm border border-gray-100 hover:shadow-xl transition-all duration-300">
+        <span
+          class="absolute left-0 top-0 bottom-0 w-1 rounded-l-lg bg-gradient-to-b from-blue-400 to-cyan-500"></span>
+        <h3 class="text-5xl font-black text-navy-900 mb-2">25+</h3>
+        <p class="font-medium text-gray-700">Years of Excellence</p>
+      </div>
+
+      <!-- Stat 5 -->
+      <div
+        class="relative group p-8 rounded-2xl bg-white/90 backdrop-blur-sm border border-gray-100 hover:shadow-xl transition-all duration-300">
+        <span
+          class="absolute left-0 top-0 bottom-0 w-1 rounded-l-lg bg-gradient-to-b from-amber-400 to-yellow-500"></span>
+        <h3 class="text-5xl font-black text-navy-900 mb-2">40+</h3>
+        <p class="font-medium text-gray-700">Nationalities Represented</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Why Choose Us -->
+<section class="relative py-24 bg-gradient-to-br from-white via-blue-50 to-indigo-100 overflow-hidden">
+  <!-- Decorative blurred background elements -->
+  <div class="absolute top-0 left-0 w-64 h-64 bg-gold-200/30 rounded-full blur-3xl -translate-x-1/4 -translate-y-1/4"></div>
+  <div class="absolute bottom-0 right-0 w-72 h-72 bg-navy-200/20 rounded-full blur-3xl translate-x-1/4 translate-y-1/4"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 z-10">
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-navy-900 tracking-tight">
+        Why Choose <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-amber-500">BrightMinds</span>?
+      </h2>
+      <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+        We go beyond traditional learning — building curious, confident, and compassionate leaders ready for the future.
+      </p>
+    </div>
+
+    <!-- Features Grid: Now 3 columns on large screens, wraps gracefully -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+      
+      <!-- Box 1: Personalized Learning -->
+      <div class="group relative p-8 bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gold-400 to-amber-500 opacity-80 group-hover:opacity-100 transition-opacity"></div>
+        <div class="flex items-center justify-center w-14 h-14 bg-gold-100 rounded-full mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-gold-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-navy-800 mb-3">Personalized Learning</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Lessons tailored to how each student learns best — boosting confidence and mastery at every step.
+        </p>
+      </div>
+
+      <!-- Box 2: Holistic Development -->
+      <div class="group relative p-8 bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-teal-400 to-cyan-500 opacity-80 group-hover:opacity-100 transition-opacity"></div>
+        <div class="flex items-center justify-center w-14 h-14 bg-teal-100 rounded-full mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-navy-800 mb-3">Holistic Development</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Nurturing emotional intelligence, creativity, and character — because true success is well-rounded.
+        </p>
+      </div>
+
+      <!-- Box 3: Future Ready -->
+      <div class="group relative p-8 bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-purple-500 opacity-80 group-hover:opacity-100 transition-opacity"></div>
+        <div class="flex items-center justify-center w-14 h-14 bg-indigo-100 rounded-full mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-navy-800 mb-3">Future Ready</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Equipping students with STEM, leadership, and global skills to lead in a rapidly evolving world.
+        </p>
+      </div>
+
+      <!-- Box 4: Innovative Curriculum -->
+      <div class="group relative p-8 bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-500 to-rose-500 opacity-80 group-hover:opacity-100 transition-opacity"></div>
+        <div class="flex items-center justify-center w-14 h-14 bg-pink-100 rounded-full mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v11.494m-5.747-8.991v5.747a2.25 2.25 0 002.25 2.25h5.494a2.25 2.25 0 002.25-2.25v-5.747a2.25 2.25 0 00-2.25-2.25H8.503a2.25 2.25 0 00-2.25 2.25z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-navy-800 mb-3">Innovative Curriculum</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Project-based learning, real-world challenges, and interdisciplinary approaches spark curiosity and critical thinking.
+        </p>
+      </div>
+
+      <!-- Box 5: Inclusive Community -->
+      <div class="group relative p-8 bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-400 to-emerald-500 opacity-80 group-hover:opacity-100 transition-opacity"></div>
+        <div class="flex items-center justify-center w-14 h-14 bg-green-100 rounded-full mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.5-2.962a3.75 3.75 0 015.25 0m-5.25 0a3.75 3.75 0 00-5.25 0m10.5 0h.008v.008h-.008V18.72zm-10.5 0h.008v.008h-.008V18.72z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-navy-800 mb-3">Inclusive Community</h3>
+        <p class="text-gray-600 leading-relaxed">
+          A welcoming space where diversity is celebrated, voices are heard, and every student feels they belong.
+        </p>
+      </div>
+
+      <!-- Box 6: Expert Educators -->
+      <div class="group relative p-8 bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-500 to-blue-600 opacity-80 group-hover:opacity-100 transition-opacity"></div>
+        <div class="flex items-center justify-center w-14 h-14 bg-sky-100 rounded-full mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold text-navy-800 mb-3">Expert Educators</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Passionate mentors trained in modern pedagogy who inspire, guide, and empower every learner.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Optional CTA -->
+    <div class="text-center mt-16">
+      <a href="Why_Choose_BrightMinds.html" class="inline-block bg-gradient-to-r from-gold-400 to-amber-500 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-gold-300">
+        Start Your Journey Today →
+      </a>
+    </div>
+  </div>
+</section>
+  <!-- Our Values (Uniquely designed) -->
+<section class="parallax-core-values py-20 text-white px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl font-black mb-2">Our Core Values</h2>
+    <p class="text-lg text-gray-200 mb-12">Guiding principles that shape our culture and learning.</p>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <!-- Value 1: Integrity -->
+      <div class="relative group p-6 rounded-xl bg-navy-800/85 border border-white/25 hover:shadow-2xl transition-all duration-300">
+        <!-- left gradient stripe -->
+        <span class="absolute left-0 top-0 bottom-0 w-1 rounded-l-lg bg-gradient-to-b from-yellow-400 to-amber-500"></span>
+
+        <div class="flex items-center gap-3 mb-2 z-10 relative">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-gradient-to-tr from-yellow-400 to-amber-500 text-white" aria-hidden="true">✨</span>
+          <h3 class="text-xl font-bold text-gold-400">Integrity</h3>
+        </div>
+        <p class="text-white/90">Strong morals guide our learning and living.</p>
+      </div>
+
+      <!-- Value 2: Curiosity -->
+      <div class="relative group p-6 rounded-xl bg-navy-800/85 border border-white/25 hover:shadow-2xl transition-all duration-300">
+        <span class="absolute left-0 top-0 bottom-0 w-1 rounded-l-lg bg-gradient-to-b from-cyan-400 to-blue-500"></span>
+
+        <div class="flex items-center gap-3 mb-2 z-10 relative">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-gradient-to-tr from-cyan-400 to-blue-500 text-white" aria-hidden="true">💡</span>
+          <h3 class="text-xl font-bold text-gold-400">Curiosity</h3>
+        </div>
+        <p class="text-white/90">Asking questions is where innovation begins.</p>
+      </div>
+
+      <!-- Value 3: Compassion -->
+      <div class="relative group p-6 rounded-xl bg-navy-800/85 border border-white/25 hover:shadow-2xl transition-all duration-300">
+        <span class="absolute left-0 top-0 bottom-0 w-1 rounded-l-lg bg-gradient-to-b from-pink-500 to-rose-500"></span>
+
+        <div class="flex items-center gap-3 mb-2 z-10 relative">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-gradient-to-tr from-pink-500 to-rose-500 text-white" aria-hidden="true">💖</span>
+          <h3 class="text-xl font-bold text-gold-400">Compassion</h3>
+        </div>
+        <p class="text-white/90">We grow with kindness and empathy at heart.</p>
+      </div>
+
+      <!-- Value 4: Excellence -->
+      <div class="relative group p-6 rounded-xl bg-navy-800/85 border border-white/25 hover:shadow-2xl transition-all duration-300">
+        <span class="absolute left-0 top-0 bottom-0 w-1 rounded-l-lg bg-gradient-to-b from-yellow-400 to-amber-400"></span>
+
+        <div class="flex items-center gap-3 mb-2 z-10 relative">
+          <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-gradient-to-tr from-yellow-400 to-amber-400 text-white" aria-hidden="true">🏆</span>
+          <h3 class="text-xl font-bold text-gold-400">Excellence</h3>
+        </div>
+        <p class="text-white/90">A relentless pursuit of knowledge and growth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Achievements & Recognition - Modern Design -->
+<section class="relative py-24 bg-gradient-to-b from-navy-50 to-white overflow-hidden">
+  <!-- Decorative floating elements -->
+  <div class="absolute top-10 left-10 w-20 h-20 bg-gold-200/50 rounded-full blur-2xl opacity-60 animate-pulse"></div>
+  <div class="absolute bottom-10 right-10 w-28 h-28 bg-blue-200/40 rounded-full blur-3xl opacity-70 animate-pulse delay-1000"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 z-10">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-navy-900 tracking-tight">
+        Achievements & Recognition <span class="inline-block ml-2">🏆</span>
+      </h2>
+      <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+        From national stages to local communities, BrightMinds shines through dedication, talent, and heart.
+      </p>
+    </div>
+
+    <!-- Achievements Grid -->
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Achievement 1: National Debate Champions -->
+      <div class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+        <div class="p-8 h-full flex flex-col">
+          <div class="flex items-center mb-4">
+            <div class="p-3 bg-gradient-to-br from-gold-400 to-amber-500 rounded-full mr-4 shadow-md">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4c0-1.166.414-2.23 1.086-3.086M12 21a9 9 0 100-18 9 9 0 000 18z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy-800">National Debate Champions</h3>
+          </div>
+          <p class="text-gray-600 leading-relaxed flex-grow">
+            Two consecutive years winning top honors — proving our students excel in logic, speech, and critical thinking under pressure.
+          </p>
+          <div class="mt-6 text-sm font-medium text-gold-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Recognized Nationally →
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievement 2: STEM Innovation Award -->
+      <div class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+        <div class="p-8 h-full flex flex-col">
+          <div class="flex items-center mb-4">
+            <div class="p-3 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full mr-4 shadow-md">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy-800">STEM Innovation Award</h3>
+          </div>
+          <p class="text-gray-600 leading-relaxed flex-grow">
+            Honored for groundbreaking robotics, coding projects, and science fair wins — inspiring the next generation of innovators.
+          </p>
+          <div class="mt-6 text-sm font-medium text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Innovation Leaders →
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievement 3: Community Heroes -->
+      <div class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+        <div class="p-8 h-full flex flex-col">
+          <div class="flex items-center mb-4">
+            <div class="p-3 bg-gradient-to-br from-green-500 to-teal-600 rounded-full mr-4 shadow-md">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-navy-800">Community Heroes</h3>
+          </div>
+          <p class="text-gray-600 leading-relaxed flex-grow">
+            Students led food drives, mentorship programs, and neighborhood clean-ups — making real impact across the city.
+          </p>
+          <div class="mt-6 text-sm font-medium text-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Changemakers in Action →
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional CTA -->
+    <div class="text-center mt-16">
+      <a href="awards.html" class="inline-block bg-gradient-to-r from-gold-400 to-amber-500 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-gold-300">
+        View More Achievements & Recognition →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Global Community - Modern Design -->
+<section class="relative py-24 bg-gradient-to-br from-white via-blue-50 to-indigo-100 overflow-hidden">
+  <!-- Decorative globe-like elements -->
+  <div class="absolute top-10 left-10 w-32 h-32 bg-blue-200/30 rounded-full blur-2xl animate-spin-slow"></div>
+  <div class="absolute bottom-10 right-10 w-40 h-40 bg-gold-200/30 rounded-full blur-3xl animate-pulse"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 z-10">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-navy-900 tracking-tight">
+        A Truly Global Community <span class="inline-block ml-2">🌍</span>
+      </h2>
+      <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+        With students from over <strong>40+ nationalities</strong>, diversity isn’t just welcomed — it’s woven into everyday learning, friendship, and celebration.
+      </p>
+    </div>
+
+    <!-- Global Features Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <!-- International Festivals -->
+      <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-red-500 to-orange-500 rounded-full mb-5 shadow-lg group-hover:scale-110 transition-transform">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-navy-800 mb-2">International Festivals</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Celebrate Diwali, Lunar New Year, Eid, Christmas & more — shared joy across cultures.
+        </p>
+      </div>
+
+      <!-- Exchange Programs -->
+      <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-sky-600 rounded-full mb-5 shadow-lg group-hover:scale-110 transition-transform">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h1a2 2 0 002-2v-1a2 2 0 012-2h1.945M7.884 5.036A9 9 0 1016.116 18.964M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-navy-800 mb-2">Exchange Programs</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Partner schools in Europe, Asia & the Americas offer life-changing cultural immersion.
+        </p>
+      </div>
+
+      <!-- Language Clubs -->
+      <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-full mb-5 shadow-lg group-hover:scale-110 transition-transform">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m4 13-4-4-4 4M1 21h16a2 2 0 002-2V7a2 2 0 00-2-2H3a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-navy-800 mb-2">Language Clubs</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Learn Spanish, Mandarin, French & Arabic through fun, peer-led conversations and games.
+        </p>
+      </div>
+
+      <!-- UN Student Summit Delegations -->
+      <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+        <div class="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full mb-5 shadow-lg group-hover:scale-110 transition-transform">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.653-.124-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.653.124-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-navy-800 mb-2">UN Student Summit</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Our delegates represent BrightMinds at global forums on climate, peace, and human rights.
+        </p>
+      </div>
+    </div>
+
+    <!-- Optional CTA or Stat Highlight -->
+    <div class="mt-16 text-center">
+      <div class="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-8 py-4 rounded-full shadow-lg">
+        <span class="font-semibold text-lg">40+ Nationalities</span> • 
+        <span class="font-medium">One Global Family</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Upcoming Events - Modern Design -->
+<section class="parallax-events relative py-24 text-navy-900 overflow-hidden">
+  <!-- Decorative floating elements -->
+  <div class="absolute top-10 left-10 w-24 h-24 bg-white/20 rounded-full blur-xl animate-pulse"></div>
+  <div class="absolute bottom-10 right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 z-10">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight">
+        Upcoming Events <span class="inline-block ml-2">📅</span>
+      </h2>
+      <p class="mt-4 text-lg max-w-2xl mx-auto opacity-90">
+        Join us for exciting moments — from open doors to creative showcases and scientific breakthroughs.
+      </p>
+    </div>
+
+    <!-- Events Grid -->
+    <div id="events-container" class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    </div>
+
+  </div>
+</section>
+  <!-- Footer -->
+  <footer id="contact" class="bg-navy-900 text-gray-300 py-16 px-6">
+    <div class="flex  mb-4">
+      <img src="image/logo.png" alt="BrightMinds Academy Logo" class="w-10 h-10 mr-2">
+      <span class="font-bold text-lg">BrightMinds Academy</span>
+    </div>
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">Contact</h3>
+        <p>📍 456 Academy Street, Springfield</p>
+        <p>📞 (555) 123-4567</p>
+        <p>✉️ contact@greenwoodschool.edu</p>
+      </div>
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li>Admissions</li>
+          <li>Parent Portal</li>
+          <li>Academic Calendar</li>
+          <li>Alumni Network</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">School Hours</h3>
+        <p>Mon–Fri: 8 AM – 4 PM</p>
+        <p>Office: 8 AM – 5 PM</p>
+      </div>
+      <div>
+        <h3 class="text-gold-400 font-bold text-xl mb-4">Stay Updated</h3>
+        <p>Subscribe to our weekly newsletter for events & achievements.</p>
+        <input type="email" placeholder="Your email" class="mt-3 px-3 py-2 rounded w-full text-black" />
+        <button class="mt-2 bg-gold-500 px-4 py-2 rounded font-bold text-navy-900 hover:bg-gold-400">Subscribe</button>
+      </div>
+    </div>
+    <div class="text-center text-sm text-gray-400 mt-8">
+      © 2024 BrightMinds Academy. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Inject modals
+    fetch('modals.html')
+      .then(response => response.text())
+      .then(html => {
+        document.body.insertAdjacentHTML('beforeend', html);
+      })
+      .catch(error => console.error('Error loading modals:', error));
+
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('json/events.json')
+        .then(response => response.json())
+        .then(events => {
+          const container = document.getElementById('events-container');
+          events.forEach(event => {
+            const eventCard = `
+              <div class="group bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/20">
+                <div class="p-8">
+                  <div class="flex items-center mb-4">
+                    <div class="p-3 bg-gold-100 rounded-full mr-4">
+                      ${event.icon_html}
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-800">${event.title}</h3>
+                  </div>
+                  <p class="text-gray-700 mb-5">
+                    ${event.description}
+                  </p>
+                  <div class="inline-flex items-center px-4 py-2 bg-gold-100 text-gold-800 rounded-full text-sm font-semibold">
+                    ${event.date_html}
+                  </div>
+                </div>
+              </div>
+            `;
+            container.insertAdjacentHTML('beforeend', eventCard);
+          });
+        })
+        .catch(error => console.error('Error fetching events:', error));
+    });
+  </script>
+
+</body>
+</html>
